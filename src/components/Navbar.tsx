@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -12,59 +13,62 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { Menu } from "lucide-react";
 import { ModeToggle } from "./mode-toggle";
+import { LanguageToggle } from "./LanguageToggle";
 import { LogoIcon } from "./Icons";
 
 interface RouteProps {
   href: string;
-  label: string;
+  labelKey: string;
 }
 
 const routeList: RouteProps[] = [
   {
     href: "#services",
-    label: "Services",
+    labelKey: "navbar.services",
   },
   {
     href: "#features",
-    label: "Solutions",
+    labelKey: "navbar.solutions",
   },
   {
     href: "#testimonials",
-    label: "Clients",
+    labelKey: "navbar.clients",
   },
   {
     href: "#pricing",
-    label: "Plans",
+    labelKey: "navbar.plans",
   },
   {
     href: "#faq",
-    label: "FAQ",
+    labelKey: "navbar.faq",
   },
 ];
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const { t } = useTranslation();
+
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
-        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between ">
+        <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
           <NavigationMenuItem className="font-bold flex">
             <a
               rel="noreferrer noopener"
               href="/"
-              className="ml-2 font-bold text-xl flex"
+              className="ltr:ml-2 rtl:mr-2 font-bold text-xl flex gap-1"
             >
               <LogoIcon />
-              Integrated Analytics
+              {t('navbar.brand')}
             </a>
           </NavigationMenuItem>
 
           {/* mobile */}
-          <span className="flex md:hidden">
+          <span className="flex md:hidden gap-1">
+            <LanguageToggle />
             <ModeToggle />
 
             <Sheet
@@ -83,19 +87,19 @@ export const Navbar = () => {
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    Integrated Analytics
+                    {t('navbar.brand')}
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
-                  {routeList.map(({ href, label }: RouteProps) => (
+                  {routeList.map(({ href, labelKey }: RouteProps) => (
                     <a
                       rel="noreferrer noopener"
-                      key={label}
+                      key={labelKey}
                       href={href}
                       onClick={() => setIsOpen(false)}
                       className={buttonVariants({ variant: "ghost" })}
                     >
-                      {label}
+                      {t(labelKey)}
                     </a>
                   ))}
                   <a
@@ -105,7 +109,7 @@ export const Navbar = () => {
                       variant: "secondary",
                     })}`}
                   >
-                    Contact Us
+                    {t('footer.contact')}
                   </a>
                 </nav>
               </SheetContent>
@@ -123,7 +127,7 @@ export const Navbar = () => {
                   variant: "ghost",
                 })}`}
               >
-                {route.label}
+                {t(route.labelKey)}
               </a>
             ))}
           </nav>
@@ -134,9 +138,10 @@ export const Navbar = () => {
               href="#cta"
               className={`border ${buttonVariants({ variant: "secondary" })}`}
             >
-              Contact Us
+              {t('footer.contact')}
             </a>
 
+            <LanguageToggle />
             <ModeToggle />
           </div>
         </NavigationMenuList>

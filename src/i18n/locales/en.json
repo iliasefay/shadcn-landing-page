@@ -1,0 +1,306 @@
+{
+  "navbar": {
+    "brand": "Integrated Analytics",
+    "services": "Services",
+    "solutions": "Solutions",
+    "clients": "Clients",
+    "plans": "Plans",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title1": "Intelligent",
+    "title2": "Digital",
+    "title3": "Transformation",
+    "title4": "Solutions",
+    "description": "Empowering businesses with data analytics, cloud solutions, AI-powered insights, and enterprise applications to drive growth and operational excellence.",
+    "cta_primary": "Get a Free Consultation",
+    "cta_secondary": "Explore Our Services"
+  },
+  "heroCards": {
+    "testimonial_name": "Ahmed Mohammed",
+    "testimonial_title": "CTO, TechVentures",
+    "testimonial_content": "Their analytics platform transformed our decision-making!",
+    "team_name": "Sarah Al-Rashid",
+    "team_title": "Chief Data Scientist",
+    "team_description": "Turning complex data into actionable insights that drive business success",
+    "pricing_title": "Growth Plan",
+    "pricing_badge": "Popular",
+    "pricing_type": "Custom",
+    "pricing_suffix": "pricing",
+    "pricing_description": "Tailored analytics solutions for growing enterprises.",
+    "pricing_cta": "Request a Quote",
+    "pricing_benefits": ["Advanced Analytics", "Cloud Integration", "24/7 Support"],
+    "service_title": "AI-Powered Insights",
+    "service_description": "Leverage machine learning and AI to uncover hidden patterns and drive smarter decisions."
+  },
+  "sponsors": {
+    "title": "Trusted Across Industries",
+    "banking": "Banking",
+    "government": "Government",
+    "healthcare": "Healthcare",
+    "transportation": "Transportation",
+    "retail": "Retail",
+    "manufacturing": "Manufacturing"
+  },
+  "about": {
+    "title1": "Why",
+    "title2": "Choose Us",
+    "description": "Integrated Analytics is a leading digital transformation partner with over 15 years of experience helping enterprises across the Middle East and beyond achieve their technology goals. We combine deep industry expertise with cutting-edge solutions to deliver measurable business outcomes.",
+    "stats": {
+      "clients": "Enterprise Clients",
+      "experience": "Years Experience",
+      "uptime": "Uptime SLA",
+      "support": "Support Available"
+    }
+  },
+  "howItWorks": {
+    "title1": "How It",
+    "title2": "Works",
+    "description": "Our proven methodology ensures successful digital transformation outcomes for every client.",
+    "steps": [
+      {
+        "title": "Discovery & Assessment",
+        "description": "We analyze your current systems, identify opportunities, and understand your business objectives."
+      },
+      {
+        "title": "Strategy & Roadmap",
+        "description": "We design a comprehensive transformation strategy with clear milestones and KPIs."
+      },
+      {
+        "title": "Implementation",
+        "description": "Our expert teams deliver solutions using agile methodologies and best practices."
+      },
+      {
+        "title": "Support & Optimization",
+        "description": "Continuous monitoring, support, and optimization to ensure long-term success."
+      }
+    ]
+  },
+  "features": {
+    "title1": "Key",
+    "title2": "Capabilities",
+    "description": "Comprehensive solutions to drive your digital transformation",
+    "items": [
+      {
+        "title": "Data Analytics & BI",
+        "description": "Transform raw data into actionable insights with our advanced analytics platforms, real-time dashboards, and AI-powered business intelligence solutions."
+      },
+      {
+        "title": "Cloud Solutions",
+        "description": "Modernize your infrastructure with our secure cloud migration services, supporting AWS, Azure, and hybrid environments for optimal performance and scalability."
+      },
+      {
+        "title": "AI & Machine Learning",
+        "description": "Harness the power of artificial intelligence with our custom ML models, predictive analytics, and intelligent automation solutions."
+      }
+    ],
+    "badges": [
+      "Real-time Analytics",
+      "Cloud Migration",
+      "AI/ML Solutions",
+      "Enterprise Apps",
+      "Cybersecurity",
+      "IoT Integration",
+      "Process Automation",
+      "Data Governance",
+      "24/7 Support"
+    ]
+  },
+  "services": {
+    "title1": "Enterprise-Grade",
+    "title2": "Services",
+    "description": "Comprehensive digital transformation services designed to accelerate your business growth and operational efficiency.",
+    "items": [
+      {
+        "title": "Data Analytics & Insights",
+        "description": "Unlock the full potential of your data with advanced analytics, real-time reporting, and AI-powered business intelligence solutions."
+      },
+      {
+        "title": "Enterprise Applications",
+        "description": "Streamline operations with custom ERP solutions, CRM integrations, and enterprise-grade applications tailored to your business needs."
+      },
+      {
+        "title": "Cloud & Infrastructure",
+        "description": "Modernize your IT infrastructure with secure cloud migration, hybrid solutions, and managed services for optimal performance."
+      }
+    ]
+  },
+  "cta": {
+    "title1": "Ready to",
+    "title2": "Transform",
+    "title3": "Your Business?",
+    "description": "Let's discuss how Integrated Analytics can help you harness the power of data and technology to achieve your business goals. Schedule a free consultation with our experts today.",
+    "cta_primary": "Schedule a Demo",
+    "cta_secondary": "View Case Studies"
+  },
+  "testimonials": {
+    "title1": "What Our",
+    "title2": "Clients Say",
+    "description": "Trusted by leading enterprises across the region",
+    "items": [
+      {
+        "name": "Mohammed Al-Faisal",
+        "username": "@malfaisal",
+        "comment": "Integrated Analytics transformed our entire data infrastructure. Their expertise in banking analytics helped us reduce fraud by 40% and improve customer satisfaction scores significantly."
+      },
+      {
+        "name": "Dr. Fatima Hassan",
+        "username": "@drfhassan",
+        "comment": "The healthcare analytics solution they implemented has revolutionized our patient care. We now have real-time insights that help us make better clinical decisions."
+      },
+      {
+        "name": "Abdullah Al-Rashid",
+        "username": "@arashid_ceo",
+        "comment": "Outstanding cloud migration project! They moved our entire ERP system to the cloud with zero downtime. Their team's professionalism and expertise are unmatched."
+      },
+      {
+        "name": "Sarah Thompson",
+        "username": "@sthompson_retail",
+        "comment": "The AI-powered demand forecasting solution has improved our inventory management by 35%. Integrated Analytics truly understands retail challenges."
+      },
+      {
+        "name": "Khalid Al-Mansour",
+        "username": "@kmansour_gov",
+        "comment": "Working with Integrated Analytics on our smart city initiative has been exceptional. Their IoT and analytics solutions are helping us build a more efficient city."
+      },
+      {
+        "name": "Nadia Khalil",
+        "username": "@nkhalil_cfo",
+        "comment": "Their financial analytics platform gives us unprecedented visibility into our operations. The ROI we've achieved within the first year exceeded our expectations."
+      }
+    ]
+  },
+  "team": {
+    "title1": "Our",
+    "title2": "Leadership",
+    "description": "Meet the experts driving digital transformation",
+    "members": [
+      {
+        "name": "Omar Al-Farsi",
+        "position": "CEO & Founder"
+      },
+      {
+        "name": "Dr. Layla Hassan",
+        "position": "Chief Technology Officer"
+      },
+      {
+        "name": "Ahmed Mahmoud",
+        "position": "VP, Data Science"
+      },
+      {
+        "name": "Rania Al-Sayed",
+        "position": "Head of Cloud Services"
+      }
+    ]
+  },
+  "pricing": {
+    "title1": "Flexible",
+    "title2": "Engagement",
+    "title3": "Models",
+    "description": "Tailored solutions with transparent pricing to match your business scale and requirements.",
+    "plans": [
+      {
+        "title": "Starter",
+        "price": "Custom",
+        "suffix": "pricing",
+        "description": "Perfect for small businesses beginning their digital transformation journey.",
+        "cta": "Get a Quote",
+        "benefits": [
+          "Basic Analytics Dashboard",
+          "Up to 5 Users",
+          "Standard Support",
+          "Cloud Hosting",
+          "Monthly Reports"
+        ]
+      },
+      {
+        "title": "Professional",
+        "price": "Custom",
+        "suffix": "pricing",
+        "description": "Comprehensive solutions for growing enterprises with advanced needs.",
+        "cta": "Schedule a Demo",
+        "popular": true,
+        "benefits": [
+          "Advanced Analytics & BI",
+          "Up to 50 Users",
+          "24/7 Priority Support",
+          "Hybrid Cloud Options",
+          "Real-time Dashboards"
+        ]
+      },
+      {
+        "title": "Enterprise",
+        "price": "Custom",
+        "suffix": "pricing",
+        "description": "Full-scale digital transformation with dedicated resources and support.",
+        "cta": "Contact Sales",
+        "benefits": [
+          "Complete Suite Access",
+          "Unlimited Users",
+          "Dedicated Account Manager",
+          "On-premise & Cloud",
+          "Custom Integrations"
+        ]
+      }
+    ],
+    "mostPopular": "Most popular"
+  },
+  "newsletter": {
+    "title1": "Stay Updated with",
+    "title2": "Industry Insights",
+    "description": "Subscribe to receive the latest trends in digital transformation, data analytics, and technology innovations.",
+    "placeholder": "your.email@company.com",
+    "cta": "Subscribe"
+  },
+  "faq": {
+    "title1": "Frequently Asked",
+    "title2": "Questions",
+    "stillQuestions": "Still have questions?",
+    "contactUs": "Contact us",
+    "items": [
+      {
+        "question": "What industries does Integrated Analytics serve?",
+        "answer": "We serve a wide range of industries including banking and financial services, healthcare, government, retail, manufacturing, and transportation. Our solutions are tailored to meet the specific regulatory requirements and operational needs of each sector."
+      },
+      {
+        "question": "How long does a typical digital transformation project take?",
+        "answer": "Project timelines vary based on scope and complexity. A basic analytics implementation may take 4-8 weeks, while comprehensive enterprise transformations can span 6-12 months. We provide detailed timelines during our discovery phase and use agile methodologies to deliver value incrementally."
+      },
+      {
+        "question": "Do you offer both cloud and on-premise solutions?",
+        "answer": "Yes, we offer flexible deployment options including public cloud (AWS, Azure, GCP), private cloud, on-premise, and hybrid configurations. We help you choose the best architecture based on your security requirements, compliance needs, and performance goals."
+      },
+      {
+        "question": "What kind of support do you provide after implementation?",
+        "answer": "We offer comprehensive post-implementation support including 24/7 technical assistance, regular system health checks, performance optimization, user training, and dedicated account management. Our enterprise clients receive priority support with guaranteed response times."
+      },
+      {
+        "question": "How do you ensure data security and compliance?",
+        "answer": "Security is built into every solution we deliver. We follow industry best practices, implement encryption at rest and in transit, conduct regular security audits, and ensure compliance with standards like ISO 27001, SOC 2, GDPR, and industry-specific regulations such as HIPAA for healthcare and PCI-DSS for financial services."
+      }
+    ]
+  },
+  "footer": {
+    "followUs": "Follow Us",
+    "linkedin": "LinkedIn",
+    "twitter": "Twitter",
+    "youtube": "YouTube",
+    "services": "Services",
+    "dataAnalytics": "Data Analytics",
+    "cloudSolutions": "Cloud Solutions",
+    "enterpriseApps": "Enterprise Apps",
+    "company": "Company",
+    "aboutUs": "About Us",
+    "ourTeam": "Our Team",
+    "caseStudies": "Case Studies",
+    "resources": "Resources",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "newsletter": "Newsletter",
+    "copyright": "© 2024 Integrated Analytics. All rights reserved."
+  },
+  "languageToggle": {
+    "en": "EN",
+    "ar": "عربي"
+  }
+}
