@@ -72,7 +72,10 @@ export const Pricing = () => {
             </CardHeader>
 
             <CardContent>
-              <Button className="w-full">{plan.cta}</Button>
+              <Button
+                className="w-full"
+                onClick={() => window.location.href = `mailto:contact@integratedanalytics.com?subject=${encodeURIComponent(plan.title + ' Plan Inquiry')}`}
+              >{plan.cta}</Button>
             </CardContent>
 
             <hr className="w-4/5 m-auto mb-4" />

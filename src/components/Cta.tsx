@@ -25,10 +25,14 @@ export const Cta = () => {
         </div>
 
         <div className="space-y-4 lg:col-start-2">
-          <Button className="w-full md:mr-4 rtl:md:ml-4 rtl:md:mr-0 md:w-auto">{t('cta.cta_primary')}</Button>
+          <Button
+            className="w-full md:mr-4 rtl:md:ml-4 rtl:md:mr-0 md:w-auto"
+            onClick={() => window.location.href = 'mailto:contact@integratedanalytics.com?subject=Demo Request'}
+          >{t('cta.cta_primary')}</Button>
           <Button
             variant="outline"
             className="w-full md:w-auto"
+            onClick={() => document.getElementById('testimonials')?.scrollIntoView({ behavior: 'smooth' })}
           >
             {t('cta.cta_secondary')}
           </Button>

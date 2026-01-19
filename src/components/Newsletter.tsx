@@ -1,13 +1,23 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { Check } from "lucide-react";
 
 export const Newsletter = () => {
   const { t } = useTranslation();
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Subscribed!");
+    if (email) {
+      console.log("Subscribed:", email);
+      setIsSubmitted(true);
+      setEmail("");
+      // Reset the success message after 5 seconds
+      setTimeout(() => setIsSubmitted(false), 5000);
+    }
   };
 
   return (
@@ -30,12 +40,23 @@ export const Newsletter = () => {
           onSubmit={handleSubmit}
         >
           <Input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             placeholder={t('newsletter.placeholder')}
             className="bg-muted/50 dark:bg-muted/80"
             aria-label="email"
+            required
           />
-          <Button>{t('newsletter.cta')}</Button>
+          <Button type="submit">{t('newsletter.cta')}</Button>
         </form>
+
+        {isSubmitted && (
+          <div className="flex items-center justify-center gap-2 mt-4 text-green-600 dark:text-green-400">
+            <Check className="h-5 w-5" />
+            <p>{t('newsletter.successMessage')}</p>
+          </div>
+        )}
       </div>
 
       <hr className="w-11/12 mx-auto" />

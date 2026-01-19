@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -50,6 +51,7 @@ const routeList: RouteProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const { t } = useTranslation();
+  const isRTL = i18n.language === "ar";
 
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
@@ -84,7 +86,7 @@ export const Navbar = () => {
                 </Menu>
               </SheetTrigger>
 
-              <SheetContent side={"left"}>
+              <SheetContent side={isRTL ? "right" : "left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
                     {t('navbar.brand')}

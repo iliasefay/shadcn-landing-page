@@ -302,5 +302,14 @@
   "languageToggle": {
     "en": "EN",
     "ar": "عربي"
+  },
+  "modeToggle": {
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام",
+    "toggleTheme": "تبديل السمة"
+  },
+  "newsletter": {
+    "successMessage": "شكراً لاشتراكك! سنبقيك على اطلاع بأحدث الرؤى."
   }
 }

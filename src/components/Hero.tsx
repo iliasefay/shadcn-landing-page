@@ -29,7 +29,10 @@ export const Hero = () => {
         </p>
 
         <div className="space-y-4 md:space-y-0 md:space-x-4 rtl:md:space-x-reverse">
-          <Button className="w-full md:w-auto">{t('hero.cta_primary')}</Button>
+          <Button
+            className="w-full md:w-auto"
+            onClick={() => window.location.href = 'mailto:contact@integratedanalytics.com?subject=Free Consultation Request'}
+          >{t('hero.cta_primary')}</Button>
 
           <a
             rel="noreferrer noopener"

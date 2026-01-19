@@ -302,5 +302,14 @@
   "languageToggle": {
     "en": "EN",
     "ar": "عربي"
+  },
+  "modeToggle": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "toggleTheme": "Toggle theme"
+  },
+  "newsletter": {
+    "successMessage": "Thank you for subscribing! We'll keep you updated with the latest insights."
   }
 }

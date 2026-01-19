@@ -60,7 +60,7 @@ export const HeroCards = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://twitter.com/intikianalytics"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -81,7 +81,7 @@ export const HeroCards = () => {
 
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://linkedin.com/company/integrated-analytics"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -118,7 +118,10 @@ export const HeroCards = () => {
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">{t('heroCards.pricing_cta')}</Button>
+          <Button
+            className="w-full"
+            onClick={() => window.location.href = 'mailto:contact@integratedanalytics.com?subject=Quote Request'}
+          >{t('heroCards.pricing_cta')}</Button>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />

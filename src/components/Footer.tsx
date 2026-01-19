@@ -25,7 +25,8 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://linkedin.com/company/integrated-analytics"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
               {t('footer.linkedin')}
@@ -35,7 +36,8 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://twitter.com/intikianalytics"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
               {t('footer.twitter')}
@@ -45,7 +47,8 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://youtube.com/@integratedanalytics"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
               {t('footer.youtube')}

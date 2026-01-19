@@ -57,7 +57,7 @@ export const Team = () => {
             <CardFooter>
               <a
                 rel="noreferrer noopener"
-                href="#"
+                href="https://linkedin.com/company/integrated-analytics"
                 target="_blank"
                 className={buttonVariants({
                   variant: "ghost",
