@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -11,9 +12,10 @@ import {
 } from "@/components/ui/card";
 import { Check, Linkedin } from "lucide-react";
 import { LightBulbIcon } from "./Icons";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 export const HeroCards = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
       {/* Testimonial */}
@@ -22,58 +24,43 @@ export const HeroCards = () => {
           <Avatar>
             <AvatarImage
               alt=""
-              src="https://github.com/shadcn.png"
+              src="https://i.pravatar.cc/150?img=33"
             />
-            <AvatarFallback>SH</AvatarFallback>
+            <AvatarFallback>AM</AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">John Doe React</CardTitle>
-            <CardDescription>@john_doe</CardDescription>
+            <CardTitle className="text-lg">{t('heroCards.testimonial_name')}</CardTitle>
+            <CardDescription>{t('heroCards.testimonial_title')}</CardDescription>
           </div>
         </CardHeader>
 
-        <CardContent>This landing page is awesome!</CardContent>
+        <CardContent>{t('heroCards.testimonial_content')}</CardContent>
       </Card>
 
       {/* Team */}
       <Card className="absolute right-[20px] top-4 w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
           <img
-            src="https://i.pravatar.cc/150?img=58"
+            src="https://i.pravatar.cc/150?img=68"
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Leo Miranda</CardTitle>
+          <CardTitle className="text-center">{t('heroCards.team_name')}</CardTitle>
           <CardDescription className="font-normal text-primary">
-            Frontend Developer
+            {t('heroCards.team_title')}
           </CardDescription>
         </CardHeader>
 
         <CardContent className="text-center pb-2">
-          <p>
-            I really enjoy transforming ideas into functional software that
-            exceeds expectations
-          </p>
+          <p>{t('heroCards.team_description')}</p>
         </CardContent>
 
         <CardFooter>
           <div>
             <a
               rel="noreferrer noopener"
-              href="https://github.com/leoMirandaa"
-              target="_blank"
-              className={buttonVariants({
-                variant: "ghost",
-                size: "sm",
-              })}
-            >
-              <span className="sr-only">Github icon</span>
-              <GitHubLogoIcon className="w-5 h-5" />
-            </a>
-            <a
-              rel="noreferrer noopener"
-              href="https://twitter.com/leo_mirand4"
+              href="https://twitter.com/intikianalytics"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -94,7 +81,7 @@ export const HeroCards = () => {
 
             <a
               rel="noreferrer noopener"
-              href="https://www.linkedin.com/in/leopoldo-miranda/"
+              href="https://linkedin.com/company/integrated-analytics"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",
@@ -112,40 +99,43 @@ export const HeroCards = () => {
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Free
+            {t('heroCards.pricing_title')}
             <Badge
               variant="secondary"
               className="text-sm text-primary"
             >
-              Most popular
+              {t('heroCards.pricing_badge')}
             </Badge>
           </CardTitle>
           <div>
-            <span className="text-3xl font-bold">$0</span>
-            <span className="text-muted-foreground"> /month</span>
+            <span className="text-3xl font-bold">{t('heroCards.pricing_type')}</span>
+            <span className="text-muted-foreground"> {t('heroCards.pricing_suffix')}</span>
           </div>
 
           <CardDescription>
-            Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.
+            {t('heroCards.pricing_description')}
           </CardDescription>
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Start Free Trial</Button>
+          <Button
+            className="w-full"
+            onClick={() => window.location.href = 'mailto:contact@integratedanalytics.com?subject=Quote Request'}
+          >{t('heroCards.pricing_cta')}</Button>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["4 Team member", "4 GB Storage", "Upto 6 pages"].map(
+            {(t('heroCards.pricing_benefits', { returnObjects: true }) as string[]).map(
               (benefit: string) => (
                 <span
                   key={benefit}
                   className="flex"
                 >
                   <Check className="text-green-500" />{" "}
-                  <h3 className="ml-2">{benefit}</h3>
+                  <h3 className="ltr:ml-2 rtl:mr-2">{benefit}</h3>
                 </span>
               )
             )}
@@ -160,10 +150,9 @@ export const HeroCards = () => {
             <LightBulbIcon />
           </div>
           <div>
-            <CardTitle>Light & dark mode</CardTitle>
+            <CardTitle>{t('heroCards.service_title')}</CardTitle>
             <CardDescription className="text-md mt-2">
-              Lorem ipsum dolor sit amet consect adipisicing elit. Consectetur
-              natusm.
+              {t('heroCards.service_description')}
             </CardDescription>
           </div>
         </CardHeader>

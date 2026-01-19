@@ -1,10 +1,23 @@
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { Check } from "lucide-react";
 
 export const Newsletter = () => {
-  const handleSubmit = (e: any) => {
+  const { t } = useTranslation();
+  const [email, setEmail] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Subscribed!");
+    if (email) {
+      console.log("Subscribed:", email);
+      setIsSubmitted(true);
+      setEmail("");
+      // Reset the success message after 5 seconds
+      setTimeout(() => setIsSubmitted(false), 5000);
+    }
   };
 
   return (
@@ -13,13 +26,13 @@ export const Newsletter = () => {
 
       <div className="container py-24 sm:py-32">
         <h3 className="text-center text-4xl md:text-5xl font-bold">
-          Join Our Daily{" "}
+          {t('newsletter.title1')}{" "}
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-            Newsletter
+            {t('newsletter.title2')}
           </span>
         </h3>
         <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
-          Lorem ipsum dolor sit amet consectetur.
+          {t('newsletter.description')}
         </p>
 
         <form
@@ -27,12 +40,23 @@ export const Newsletter = () => {
           onSubmit={handleSubmit}
         >
           <Input
-            placeholder="leomirandadev@gmail.com"
-            className="bg-muted/50 dark:bg-muted/80 "
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder={t('newsletter.placeholder')}
+            className="bg-muted/50 dark:bg-muted/80"
             aria-label="email"
+            required
           />
-          <Button>Subscribe</Button>
+          <Button type="submit">{t('newsletter.cta')}</Button>
         </form>
+
+        {isSubmitted && (
+          <div className="flex items-center justify-center gap-2 mt-4 text-green-600 dark:text-green-400">
+            <Check className="h-5 w-5" />
+            <p>{t('newsletter.successMessage')}</p>
+          </div>
+        )}
       </div>
 
       <hr className="w-11/12 mx-auto" />

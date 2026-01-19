@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import {
   Card,
@@ -7,104 +8,60 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-interface TestimonialProps {
-  image: string;
-  name: string;
-  userName: string;
-  comment: string;
-}
-
-const testimonials: TestimonialProps[] = [
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
-    comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
-    comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
-    comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
-  },
-  {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
-    comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+const avatarImages = [
+  "https://i.pravatar.cc/150?img=33",
+  "https://i.pravatar.cc/150?img=47",
+  "https://i.pravatar.cc/150?img=32",
+  "https://i.pravatar.cc/150?img=44",
+  "https://i.pravatar.cc/150?img=52",
+  "https://i.pravatar.cc/150?img=20",
 ];
 
 export const Testimonials = () => {
+  const { t } = useTranslation();
+  const testimonials = t('testimonials.items', { returnObjects: true }) as { name: string; username: string; comment: string }[];
+
   return (
     <section
       id="testimonials"
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
-        Discover Why
+        {t('testimonials.title1')}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          {t('testimonials.title2')}{" "}
         </span>
-        This Landing Page
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
+        {t('testimonials.description')}
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
-        {testimonials.map(
-          ({ image, name, userName, comment }: TestimonialProps) => (
-            <Card
-              key={userName}
-              className="max-w-md md:break-inside-avoid overflow-hidden"
-            >
-              <CardHeader className="flex flex-row items-center gap-4 pb-2">
-                <Avatar>
-                  <AvatarImage
-                    alt=""
-                    src={image}
-                  />
-                  <AvatarFallback>OM</AvatarFallback>
-                </Avatar>
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
+        {testimonials.map((testimonial, index) => (
+          <Card
+            key={index}
+            className="max-w-md md:break-inside-avoid overflow-hidden"
+          >
+            <CardHeader className="flex flex-row items-center gap-4 pb-2">
+              <Avatar>
+                <AvatarImage
+                  alt=""
+                  src={avatarImages[index]}
+                />
+                <AvatarFallback>OM</AvatarFallback>
+              </Avatar>
 
-                <div className="flex flex-col">
-                  <CardTitle className="text-lg">{name}</CardTitle>
-                  <CardDescription>{userName}</CardDescription>
-                </div>
-              </CardHeader>
+              <div className="flex flex-col">
+                <CardTitle className="text-lg">{testimonial.name}</CardTitle>
+                <CardDescription>{testimonial.username}</CardDescription>
+              </div>
+            </CardHeader>
 
-              <CardContent>{comment}</CardContent>
-            </Card>
-          )
-        )}
+            <CardContent>{testimonial.comment}</CardContent>
+          </Card>
+        ))}
       </div>
     </section>
   );

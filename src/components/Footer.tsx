@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { LogoIcon } from "./Icons";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
@@ -10,158 +13,151 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-bold text-xl flex gap-1"
           >
             <LogoIcon />
-            ShadcnUI/React
+            {t('navbar.brand')}
           </a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+          <h3 className="font-bold text-lg">{t('footer.followUs')}</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://linkedin.com/company/integrated-analytics"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
-              Github
+              {t('footer.linkedin')}
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://twitter.com/intikianalytics"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
-              Twitter
+              {t('footer.twitter')}
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="https://youtube.com/@integratedanalytics"
+              target="_blank"
               className="opacity-60 hover:opacity-100"
             >
-              Dribbble
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Web
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
+              {t('footer.youtube')}
             </a>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
+          <h3 className="font-bold text-lg">{t('footer.services')}</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#services"
               className="opacity-60 hover:opacity-100"
             >
-              Features
+              {t('footer.dataAnalytics')}
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#services"
               className="opacity-60 hover:opacity-100"
             >
-              Pricing
+              {t('footer.cloudSolutions')}
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#services"
               className="opacity-60 hover:opacity-100"
             >
-              FAQ
+              {t('footer.enterpriseApps')}
             </a>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Community</h3>
+          <h3 className="font-bold text-lg">{t('footer.company')}</h3>
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#about"
               className="opacity-60 hover:opacity-100"
             >
-              Youtube
+              {t('footer.aboutUs')}
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#team"
               className="opacity-60 hover:opacity-100"
             >
-              Discord
+              {t('footer.ourTeam')}
             </a>
           </div>
 
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="#testimonials"
               className="opacity-60 hover:opacity-100"
             >
-              Twitch
+              {t('footer.caseStudies')}
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-2">
+          <h3 className="font-bold text-lg">{t('footer.resources')}</h3>
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#faq"
+              className="opacity-60 hover:opacity-100"
+            >
+              {t('footer.faq')}
+            </a>
+          </div>
+
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#cta"
+              className="opacity-60 hover:opacity-100"
+            >
+              {t('footer.contact')}
+            </a>
+          </div>
+
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#newsletter"
+              className="opacity-60 hover:opacity-100"
+            >
+              {t('footer.newsletter')}
             </a>
           </div>
         </div>
       </section>
 
       <section className="container pb-14 text-center">
-        <h3>
-          &copy; 2024 Landing page made by{" "}
-          <a
-            rel="noreferrer noopener"
-            target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
-        </h3>
+        <h3>{t('footer.copyright')}</h3>
       </section>
     </footer>
   );
