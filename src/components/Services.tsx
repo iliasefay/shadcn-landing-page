@@ -10,40 +10,40 @@ interface ServiceProps {
 
 const serviceList: ServiceProps[] = [
   {
-    title: "Code Collaboration",
+    title: "Data Analytics & Insights",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Unlock the full potential of your data with advanced analytics, real-time reporting, and AI-powered business intelligence solutions.",
     icon: <ChartIcon />,
   },
   {
-    title: "Project Management",
+    title: "Enterprise Applications",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Streamline operations with custom ERP solutions, CRM integrations, and enterprise-grade applications tailored to your business needs.",
     icon: <WalletIcon />,
   },
   {
-    title: "Task Automation",
+    title: "Cloud & Infrastructure",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Modernize your IT infrastructure with secure cloud migration, hybrid solutions, and managed services for optimal performance.",
     icon: <MagnifierIcon />,
   },
 ];
 
 export const Services = () => {
   return (
-    <section className="container py-24 sm:py-32">
+    <section id="services" className="container py-24 sm:py-32">
       <div className="grid lg:grid-cols-[1fr,1fr] gap-8 place-items-center">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">
             <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-              Client-Centric{" "}
+              Enterprise-Grade{" "}
             </span>
             Services
           </h2>
 
           <p className="text-muted-foreground text-xl mt-4 mb-8 ">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-            dolor.
+            Comprehensive digital transformation services designed to accelerate
+            your business growth and operational efficiency.
           </p>
 
           <div className="flex flex-col gap-8">

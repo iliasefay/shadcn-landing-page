@@ -18,35 +18,35 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Data Analytics & BI",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Transform raw data into actionable insights with our advanced analytics platforms, real-time dashboards, and predictive modeling solutions.",
     image: image4,
   },
   {
-    title: "Intuitive user interface",
+    title: "Cloud Solutions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Migrate and optimize your infrastructure with our hybrid cloud solutions, managed services, and secure cloud architectures tailored to your needs.",
     image: image3,
   },
   {
-    title: "AI-Powered insights",
+    title: "AI & Machine Learning",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Harness the power of artificial intelligence to automate processes, detect patterns, and make data-driven decisions faster than ever before.",
     image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "Enterprise Applications",
+  "Data Warehousing",
+  "Cloud Migration",
+  "Cybersecurity",
+  "IoT Solutions",
+  "ERP Systems",
+  "API Integration",
+  "Digital Transformation",
+  "Managed Services",
 ];
 
 export const Features = () => {
@@ -56,9 +56,9 @@ export const Features = () => {
       className="container py-24 sm:py-32 space-y-8"
     >
       <h2 className="text-3xl lg:text-4xl font-bold md:text-center">
-        Many{" "}
+        Our{" "}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-          Great Features
+          Core Solutions
         </span>
       </h2>
 

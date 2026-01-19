@@ -18,7 +18,7 @@ enum PopularPlanType {
 interface PricingProps {
   title: string;
   popular: PopularPlanType;
-  price: number;
+  price: string;
   description: string;
   buttonText: string;
   benefitList: string[];
@@ -26,48 +26,48 @@ interface PricingProps {
 
 const pricingList: PricingProps[] = [
   {
-    title: "Free",
+    title: "Starter",
     popular: 0,
-    price: 0,
+    price: "Custom",
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Get Started",
+      "Perfect for small businesses beginning their digital transformation journey.",
+    buttonText: "Get a Quote",
     benefitList: [
-      "1 Team member",
-      "2 GB Storage",
-      "Upto 4 pages",
-      "Community support",
-      "lorem ipsum dolor",
+      "Basic Analytics Dashboard",
+      "Up to 5 Users",
+      "Standard Support",
+      "Cloud Hosting",
+      "Monthly Reports",
     ],
   },
   {
-    title: "Premium",
+    title: "Professional",
     popular: 1,
-    price: 5,
+    price: "Custom",
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Start Free Trial",
+      "Comprehensive solutions for growing enterprises with advanced needs.",
+    buttonText: "Schedule a Demo",
     benefitList: [
-      "4 Team member",
-      "4 GB Storage",
-      "Upto 6 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Advanced Analytics & BI",
+      "Up to 50 Users",
+      "24/7 Priority Support",
+      "Hybrid Cloud Options",
+      "Real-time Dashboards",
     ],
   },
   {
     title: "Enterprise",
     popular: 0,
-    price: 40,
+    price: "Custom",
     description:
-      "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
-    buttonText: "Contact US",
+      "Full-scale digital transformation with dedicated resources and support.",
+    buttonText: "Contact Sales",
     benefitList: [
-      "10 Team member",
-      "8 GB Storage",
-      "Upto 10 pages",
-      "Priority support",
-      "lorem ipsum dolor",
+      "Complete Suite Access",
+      "Unlimited Users",
+      "Dedicated Account Manager",
+      "On-premise & Cloud",
+      "Custom Integrations",
     ],
   },
 ];
@@ -79,16 +79,15 @@ export const Pricing = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Get
+        Flexible
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Unlimited{" "}
+          Engagement{" "}
         </span>
-        Access
+        Models
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        reiciendis.
+        Tailored solutions with transparent pricing to match your business scale and requirements.
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {pricingList.map((pricing: PricingProps) => (
@@ -113,8 +112,8 @@ export const Pricing = () => {
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">${pricing.price}</span>
-                <span className="text-muted-foreground"> /month</span>
+                <span className="text-3xl font-bold">{pricing.price}</span>
+                <span className="text-muted-foreground"> pricing</span>
               </div>
 
               <CardDescription>{pricing.description}</CardDescription>

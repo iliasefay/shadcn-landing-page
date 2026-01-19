@@ -16,46 +16,46 @@ interface TestimonialProps {
 
 const testimonials: TestimonialProps[] = [
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe",
-    comment: "This landing page is awesome!",
+    image: "https://i.pravatar.cc/150?img=33",
+    name: "Ahmed Al-Mansoor",
+    userName: "CTO, TechVentures",
+    comment: "Integrated Analytics transformed our data infrastructure. Their team delivered a comprehensive BI solution that increased our decision-making speed by 40%.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe1",
+    image: "https://i.pravatar.cc/150?img=47",
+    name: "Sarah Thompson",
+    userName: "VP Operations, GlobalRetail",
     comment:
-      "Lorem ipsum dolor sit amet,empor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.",
+      "The cloud migration project was seamless. Zero downtime during transition and our infrastructure costs dropped by 35%. Exceptional professional service.",
   },
 
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe2",
+    image: "https://i.pravatar.cc/150?img=32",
+    name: "Mohammed Hassan",
+    userName: "CEO, FinServe Holdings",
     comment:
-      "Lorem ipsum dolor sit amet,exercitation. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "Their cybersecurity solutions gave us peace of mind. The AI-powered fraud detection system has prevented millions in potential losses. Highly recommended for financial institutions.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe3",
+    image: "https://i.pravatar.cc/150?img=44",
+    name: "Lisa Chen",
+    userName: "Director of IT, HealthPlus",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "Integrated Analytics delivered our ERP implementation on time and within budget. The post-implementation support has been outstanding. A true technology partner.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe4",
+    image: "https://i.pravatar.cc/150?img=52",
+    name: "Omar Abdullah",
+    userName: "CIO, Government Services",
     comment:
-      "Lorem ipsum dolor sit amet, tempor incididunt  aliqua. Ut enim ad minim veniam, quis nostrud.",
+      "Working with their team on our digital transformation initiative has been exceptional. They understand public sector requirements and deliver secure, compliant solutions.",
   },
   {
-    image: "https://github.com/shadcn.png",
-    name: "John Doe React",
-    userName: "@john_Doe5",
+    image: "https://i.pravatar.cc/150?img=20",
+    name: "Jennifer Martinez",
+    userName: "Head of Analytics, LogiCorp",
     comment:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "The predictive analytics platform they built has revolutionized our supply chain management. Real-time insights have improved our efficiency dramatically.",
   },
 ];
 
@@ -66,17 +66,16 @@ export const Testimonials = () => {
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold">
-        Discover Why
+        Trusted by
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          People Love{" "}
+          Industry Leaders{" "}
         </span>
-        This Landing Page
+        Worldwide
       </h2>
 
       <p className="text-xl text-muted-foreground pt-4 pb-8">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non unde error
-        facere hic reiciendis illo
+        See what our clients say about their digital transformation journey with Integrated Analytics
       </p>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2  lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">

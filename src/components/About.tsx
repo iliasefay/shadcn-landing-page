@@ -20,14 +20,15 @@ export const About = () => {
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
                   About{" "}
                 </span>
-                Company
+                Integrated Analytics
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit.
+                Integrated Analytics is a leading digital transformation company
+                specializing in data analytics, cloud solutions, and enterprise applications.
+                We empower businesses to harness the power of their data, optimize operations,
+                and accelerate growth through cutting-edge technology and AI-powered insights.
+                With expertise across banking, healthcare, government, and retail sectors,
+                we deliver tailored solutions that drive measurable results.
               </p>
             </div>
 
