@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -10,130 +11,81 @@ import {
 } from "@/components/ui/card";
 import { Check } from "lucide-react";
 
-enum PopularPlanType {
-  NO = 0,
-  YES = 1,
-}
-
-interface PricingProps {
+interface PlanProps {
   title: string;
-  popular: PopularPlanType;
   price: string;
+  suffix: string;
   description: string;
-  buttonText: string;
-  benefitList: string[];
+  cta: string;
+  popular?: boolean;
+  benefits: string[];
 }
-
-const pricingList: PricingProps[] = [
-  {
-    title: "Starter",
-    popular: 0,
-    price: "Custom",
-    description:
-      "Perfect for small businesses beginning their digital transformation journey.",
-    buttonText: "Get a Quote",
-    benefitList: [
-      "Basic Analytics Dashboard",
-      "Up to 5 Users",
-      "Standard Support",
-      "Cloud Hosting",
-      "Monthly Reports",
-    ],
-  },
-  {
-    title: "Professional",
-    popular: 1,
-    price: "Custom",
-    description:
-      "Comprehensive solutions for growing enterprises with advanced needs.",
-    buttonText: "Schedule a Demo",
-    benefitList: [
-      "Advanced Analytics & BI",
-      "Up to 50 Users",
-      "24/7 Priority Support",
-      "Hybrid Cloud Options",
-      "Real-time Dashboards",
-    ],
-  },
-  {
-    title: "Enterprise",
-    popular: 0,
-    price: "Custom",
-    description:
-      "Full-scale digital transformation with dedicated resources and support.",
-    buttonText: "Contact Sales",
-    benefitList: [
-      "Complete Suite Access",
-      "Unlimited Users",
-      "Dedicated Account Manager",
-      "On-premise & Cloud",
-      "Custom Integrations",
-    ],
-  },
-];
 
 export const Pricing = () => {
+  const { t } = useTranslation();
+  const plans = t('pricing.plans', { returnObjects: true }) as PlanProps[];
+
   return (
     <section
       id="pricing"
       className="container py-24 sm:py-32"
     >
       <h2 className="text-3xl md:text-4xl font-bold text-center">
-        Flexible
+        {t('pricing.title1')}
         <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
           {" "}
-          Engagement{" "}
+          {t('pricing.title2')}{" "}
         </span>
-        Models
+        {t('pricing.title3')}
       </h2>
       <h3 className="text-xl text-center text-muted-foreground pt-4 pb-8">
-        Tailored solutions with transparent pricing to match your business scale and requirements.
+        {t('pricing.description')}
       </h3>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {pricingList.map((pricing: PricingProps) => (
+        {plans.map((plan, index) => (
           <Card
-            key={pricing.title}
+            key={index}
             className={
-              pricing.popular === PopularPlanType.YES
+              plan.popular
                 ? "drop-shadow-xl shadow-black/10 dark:shadow-white/10"
                 : ""
             }
           >
             <CardHeader>
               <CardTitle className="flex item-center justify-between">
-                {pricing.title}
-                {pricing.popular === PopularPlanType.YES ? (
+                {plan.title}
+                {plan.popular ? (
                   <Badge
                     variant="secondary"
                     className="text-sm text-primary"
                   >
-                    Most popular
+                    {t('pricing.mostPopular')}
                   </Badge>
                 ) : null}
               </CardTitle>
               <div>
-                <span className="text-3xl font-bold">{pricing.price}</span>
-                <span className="text-muted-foreground"> pricing</span>
+                <span className="text-3xl font-bold">{plan.price}</span>
+                <span className="text-muted-foreground"> {plan.suffix}</span>
               </div>
 
-              <CardDescription>{pricing.description}</CardDescription>
+              <CardDescription>{plan.description}</CardDescription>
             </CardHeader>
 
             <CardContent>
-              <Button className="w-full">{pricing.buttonText}</Button>
+              <Button className="w-full">{plan.cta}</Button>
             </CardContent>
 
             <hr className="w-4/5 m-auto mb-4" />
 
             <CardFooter className="flex">
               <div className="space-y-4">
-                {pricing.benefitList.map((benefit: string) => (
+                {plan.benefits.map((benefit: string, i: number) => (
                   <span
-                    key={benefit}
+                    key={i}
                     className="flex"
                   >
                     <Check className="text-green-500" />{" "}
-                    <h3 className="ml-2">{benefit}</h3>
+                    <h3 className="ltr:ml-2 rtl:mr-2">{benefit}</h3>
                   </span>
                 ))}
               </div>

@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 
 export const Newsletter = () => {
+  const { t } = useTranslation();
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log("Subscribed!");
@@ -13,13 +16,13 @@ export const Newsletter = () => {
 
       <div className="container py-24 sm:py-32">
         <h3 className="text-center text-4xl md:text-5xl font-bold">
-          Stay Updated with{" "}
+          {t('newsletter.title1')}{" "}
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-            Industry Insights
+            {t('newsletter.title2')}
           </span>
         </h3>
         <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
-          Subscribe to receive the latest trends in digital transformation, data analytics, and technology innovations.
+          {t('newsletter.description')}
         </p>
 
         <form
@@ -27,11 +30,11 @@ export const Newsletter = () => {
           onSubmit={handleSubmit}
         >
           <Input
-            placeholder="your.email@company.com"
-            className="bg-muted/50 dark:bg-muted/80 "
+            placeholder={t('newsletter.placeholder')}
+            className="bg-muted/50 dark:bg-muted/80"
             aria-label="email"
           />
-          <Button>Subscribe</Button>
+          <Button>{t('newsletter.cta')}</Button>
         </form>
       </div>
 

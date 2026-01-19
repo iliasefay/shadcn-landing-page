@@ -9,7 +9,7 @@ import {
 } from './ui/dropdown-menu';
 
 export const LanguageToggle = () => {
-  const { i18n, t } = useTranslation();
+  const { i18n } = useTranslation();
 
   const toggleLanguage = (lang: string) => {
     i18n.changeLanguage(lang);

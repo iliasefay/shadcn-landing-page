@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Badge } from "./ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -13,6 +14,8 @@ import { Check, Linkedin } from "lucide-react";
 import { LightBulbIcon } from "./Icons";
 
 export const HeroCards = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="hidden lg:flex flex-row flex-wrap gap-8 relative w-[700px] h-[500px]">
       {/* Testimonial */}
@@ -27,12 +30,12 @@ export const HeroCards = () => {
           </Avatar>
 
           <div className="flex flex-col">
-            <CardTitle className="text-lg">Ahmed Mohammed</CardTitle>
-            <CardDescription>CTO, TechVentures</CardDescription>
+            <CardTitle className="text-lg">{t('heroCards.testimonial_name')}</CardTitle>
+            <CardDescription>{t('heroCards.testimonial_title')}</CardDescription>
           </div>
         </CardHeader>
 
-        <CardContent>Their analytics platform transformed our decision-making!</CardContent>
+        <CardContent>{t('heroCards.testimonial_content')}</CardContent>
       </Card>
 
       {/* Team */}
@@ -43,17 +46,14 @@ export const HeroCards = () => {
             alt="user avatar"
             className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
           />
-          <CardTitle className="text-center">Sarah Al-Rashid</CardTitle>
+          <CardTitle className="text-center">{t('heroCards.team_name')}</CardTitle>
           <CardDescription className="font-normal text-primary">
-            Chief Data Scientist
+            {t('heroCards.team_title')}
           </CardDescription>
         </CardHeader>
 
         <CardContent className="text-center pb-2">
-          <p>
-            Turning complex data into actionable insights that drive
-            business success
-          </p>
+          <p>{t('heroCards.team_description')}</p>
         </CardContent>
 
         <CardFooter>
@@ -99,40 +99,40 @@ export const HeroCards = () => {
       <Card className="absolute top-[150px] left-[50px] w-72  drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader>
           <CardTitle className="flex item-center justify-between">
-            Growth Plan
+            {t('heroCards.pricing_title')}
             <Badge
               variant="secondary"
               className="text-sm text-primary"
             >
-              Popular
+              {t('heroCards.pricing_badge')}
             </Badge>
           </CardTitle>
           <div>
-            <span className="text-3xl font-bold">Custom</span>
-            <span className="text-muted-foreground"> pricing</span>
+            <span className="text-3xl font-bold">{t('heroCards.pricing_type')}</span>
+            <span className="text-muted-foreground"> {t('heroCards.pricing_suffix')}</span>
           </div>
 
           <CardDescription>
-            Tailored analytics solutions for growing enterprises.
+            {t('heroCards.pricing_description')}
           </CardDescription>
         </CardHeader>
 
         <CardContent>
-          <Button className="w-full">Request a Quote</Button>
+          <Button className="w-full">{t('heroCards.pricing_cta')}</Button>
         </CardContent>
 
         <hr className="w-4/5 m-auto mb-4" />
 
         <CardFooter className="flex">
           <div className="space-y-4">
-            {["Advanced Analytics", "Cloud Integration", "24/7 Support"].map(
+            {(t('heroCards.pricing_benefits', { returnObjects: true }) as string[]).map(
               (benefit: string) => (
                 <span
                   key={benefit}
                   className="flex"
                 >
                   <Check className="text-green-500" />{" "}
-                  <h3 className="ml-2">{benefit}</h3>
+                  <h3 className="ltr:ml-2 rtl:mr-2">{benefit}</h3>
                 </span>
               )
             )}
@@ -147,10 +147,9 @@ export const HeroCards = () => {
             <LightBulbIcon />
           </div>
           <div>
-            <CardTitle>AI-Powered Insights</CardTitle>
+            <CardTitle>{t('heroCards.service_title')}</CardTitle>
             <CardDescription className="text-md mt-2">
-              Leverage machine learning and AI to uncover hidden patterns
-              and drive smarter decisions.
+              {t('heroCards.service_description')}
             </CardDescription>
           </div>
         </CardHeader>

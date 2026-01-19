@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import { Statistics } from "./Statistics";
 import pilot from "../assets/pilot.png";
 
 export const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="about"
@@ -18,17 +21,12 @@ export const About = () => {
             <div className="pb-6">
               <h2 className="text-3xl md:text-4xl font-bold">
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
-                  About{" "}
+                  {t('about.title1')}{" "}
                 </span>
-                Integrated Analytics
+                {t('about.title2')}
               </h2>
               <p className="text-xl text-muted-foreground mt-4">
-                Integrated Analytics is a leading digital transformation company
-                specializing in data analytics, cloud solutions, and enterprise applications.
-                We empower businesses to harness the power of their data, optimize operations,
-                and accelerate growth through cutting-edge technology and AI-powered insights.
-                With expertise across banking, healthcare, government, and retail sectors,
-                we deliver tailored solutions that drive measurable results.
+                {t('about.description')}
               </p>
             </div>
 

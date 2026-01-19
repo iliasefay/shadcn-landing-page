@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { LogoIcon } from "./Icons";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer id="footer">
       <hr className="w-11/12 mx-auto" />
@@ -10,22 +13,22 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-bold text-xl flex gap-1"
           >
             <LogoIcon />
-            Integrated Analytics
+            {t('navbar.brand')}
           </a>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow Us</h3>
+          <h3 className="font-bold text-lg">{t('footer.followUs')}</h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              LinkedIn
+              {t('footer.linkedin')}
             </a>
           </div>
 
@@ -35,7 +38,7 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              Twitter
+              {t('footer.twitter')}
             </a>
           </div>
 
@@ -45,20 +48,20 @@ export const Footer = () => {
               href="#"
               className="opacity-60 hover:opacity-100"
             >
-              YouTube
+              {t('footer.youtube')}
             </a>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Services</h3>
+          <h3 className="font-bold text-lg">{t('footer.services')}</h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#services"
               className="opacity-60 hover:opacity-100"
             >
-              Data Analytics
+              {t('footer.dataAnalytics')}
             </a>
           </div>
 
@@ -68,7 +71,7 @@ export const Footer = () => {
               href="#services"
               className="opacity-60 hover:opacity-100"
             >
-              Cloud Solutions
+              {t('footer.cloudSolutions')}
             </a>
           </div>
 
@@ -78,20 +81,20 @@ export const Footer = () => {
               href="#services"
               className="opacity-60 hover:opacity-100"
             >
-              Enterprise Apps
+              {t('footer.enterpriseApps')}
             </a>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Company</h3>
+          <h3 className="font-bold text-lg">{t('footer.company')}</h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#about"
               className="opacity-60 hover:opacity-100"
             >
-              About Us
+              {t('footer.aboutUs')}
             </a>
           </div>
 
@@ -101,7 +104,7 @@ export const Footer = () => {
               href="#team"
               className="opacity-60 hover:opacity-100"
             >
-              Our Team
+              {t('footer.ourTeam')}
             </a>
           </div>
 
@@ -111,20 +114,20 @@ export const Footer = () => {
               href="#testimonials"
               className="opacity-60 hover:opacity-100"
             >
-              Case Studies
+              {t('footer.caseStudies')}
             </a>
           </div>
         </div>
 
         <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Resources</h3>
+          <h3 className="font-bold text-lg">{t('footer.resources')}</h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#faq"
               className="opacity-60 hover:opacity-100"
             >
-              FAQ
+              {t('footer.faq')}
             </a>
           </div>
 
@@ -134,7 +137,7 @@ export const Footer = () => {
               href="#cta"
               className="opacity-60 hover:opacity-100"
             >
-              Contact
+              {t('footer.contact')}
             </a>
           </div>
 
@@ -144,16 +147,14 @@ export const Footer = () => {
               href="#newsletter"
               className="opacity-60 hover:opacity-100"
             >
-              Newsletter
+              {t('footer.newsletter')}
             </a>
           </div>
         </div>
       </section>
 
       <section className="container pb-14 text-center">
-        <h3>
-          &copy; 2024 Integrated Analytics. All rights reserved.
-        </h3>
+        <h3>{t('footer.copyright')}</h3>
       </section>
     </footer>
   );
