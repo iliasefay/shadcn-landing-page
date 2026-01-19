@@ -60,7 +60,7 @@ export const HeroCards = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="https://twitter.com/intikianalytics"
+              href="https://twitter.com/integratedanalytics"
               target="_blank"
               className={buttonVariants({
                 variant: "ghost",

@@ -250,7 +250,8 @@
     "title2": "Industry Insights",
     "description": "Subscribe to receive the latest trends in digital transformation, data analytics, and technology innovations.",
     "placeholder": "your.email@company.com",
-    "cta": "Subscribe"
+    "cta": "Subscribe",
+    "successMessage": "Thank you for subscribing! We'll keep you updated with the latest insights."
   },
   "faq": {
     "title1": "Frequently Asked",
@@ -308,8 +309,5 @@
     "dark": "Dark",
     "system": "System",
     "toggleTheme": "Toggle theme"
-  },
-  "newsletter": {
-    "successMessage": "Thank you for subscribing! We'll keep you updated with the latest insights."
   }
 }

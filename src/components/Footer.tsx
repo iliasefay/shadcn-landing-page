@@ -36,7 +36,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="https://twitter.com/intikianalytics"
+              href="https://twitter.com/integratedanalytics"
               target="_blank"
               className="opacity-60 hover:opacity-100"
             >
