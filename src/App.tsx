@@ -1,5 +1,8 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+
+// Base path for GitHub Pages deployment
+const basename = import.meta.env.BASE_URL;
 import { AnimatePresence, motion } from "framer-motion";
 import { Layout } from "./components/layout/Layout";
 import { ErrorBoundary } from "./components/ErrorBoundary";
@@ -72,7 +75,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <ErrorBoundary>
-      <Router>
+      <Router basename={basename}>
         <ProgressBar />
         <Layout>
           <Suspense fallback={<PageLoader />}>
