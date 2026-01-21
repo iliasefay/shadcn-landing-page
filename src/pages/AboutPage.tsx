@@ -12,7 +12,7 @@ import {
   Shield,
   Sparkles,
 } from "lucide-react";
-import { Team } from "@/components/Team";
+// import { Team } from "@/components/Team";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 import { SEO } from "@/components/SEO";
 
@@ -275,8 +275,8 @@ export function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <Team />
+      {/* Team Section - Hidden for now */}
+      {/* <Team /> */}
     </div>
   );
 }

@@ -5,10 +5,10 @@ import { Features } from "@/components/Features";
 import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Newsletter } from "@/components/Newsletter";
-import { Pricing } from "@/components/Pricing";
+// import { Pricing } from "@/components/Pricing";
 import { Services } from "@/components/Services";
 import { Sponsors } from "@/components/Sponsors";
-import { Team } from "@/components/Team";
+// import { Team } from "@/components/Team";
 import { Testimonials } from "@/components/Testimonials";
 
 export function HomePage() {
@@ -22,8 +22,8 @@ export function HomePage() {
       <Services />
       <Cta />
       <Testimonials />
-      <Team />
-      <Pricing />
+      {/* <Team /> */}
+      {/* <Pricing /> */}
       <Newsletter />
       <FAQ />
     </>
