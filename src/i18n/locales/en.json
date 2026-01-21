@@ -1,179 +1,179 @@
 {
   "navbar": {
     "brand": "Integrated Analytics",
+    "about": "About",
     "services": "Services",
-    "solutions": "Solutions",
-    "clients": "Clients",
-    "plans": "Plans",
-    "faq": "FAQ"
+    "industries": "Industries",
+    "careers": "Careers",
+    "contact": "Contact"
   },
   "hero": {
-    "title1": "Intelligent",
-    "title2": "Digital",
+    "title1": "Your Partner",
+    "title2": "in Digital",
     "title3": "Transformation",
-    "title4": "Solutions",
-    "description": "Empowering businesses with data analytics, cloud solutions, AI-powered insights, and enterprise applications to drive growth and operational excellence.",
-    "cta_primary": "Get a Free Consultation",
+    "title4": "",
+    "description": "We empower organizations to achieve digital excellence through advanced data analytics, cloud services, and AI solutions, becoming a trusted partner in your growth journey.",
+    "cta_primary": "Book Your Free Consultation",
     "cta_secondary": "Explore Our Services"
   },
   "heroCards": {
     "testimonial_name": "Ahmed Mohammed",
-    "testimonial_title": "CTO, TechVentures",
-    "testimonial_content": "Their analytics platform transformed our decision-making!",
+    "testimonial_title": "CTO - TechVentures",
+    "testimonial_content": "Their platform created a quantum leap in our decision-making process",
     "team_name": "Sarah Al-Rashid",
-    "team_title": "Chief Data Scientist",
-    "team_description": "Turning complex data into actionable insights that drive business success",
+    "team_title": "Head of Data Science",
+    "team_description": "We transform complex data into strategic insights that drive your business success",
     "pricing_title": "Growth Plan",
-    "pricing_badge": "Popular",
+    "pricing_badge": "Most Requested",
     "pricing_type": "Custom",
-    "pricing_suffix": "pricing",
-    "pricing_description": "Tailored analytics solutions for growing enterprises.",
+    "pricing_suffix": "Pricing",
+    "pricing_description": "Analytical solutions tailored for ambitious enterprises",
     "pricing_cta": "Request a Quote",
-    "pricing_benefits": ["Advanced Analytics", "Cloud Integration", "24/7 Support"],
+    "pricing_benefits": ["Advanced Analytics", "Cloud Integration", "Continuous Support"],
     "service_title": "AI-Powered Insights",
-    "service_description": "Leverage machine learning and AI to uncover hidden patterns and drive smarter decisions."
+    "service_description": "We leverage machine learning technologies to uncover hidden opportunities and support your strategic decisions"
   },
   "sponsors": {
-    "title": "Trusted Across Industries",
-    "banking": "Banking",
-    "government": "Government",
-    "healthcare": "Healthcare",
-    "transportation": "Transportation",
-    "retail": "Retail",
-    "manufacturing": "Manufacturing"
+    "title": "Success Partners Across Sectors",
+    "banking": "Banking Sector",
+    "government": "Government Sector",
+    "healthcare": "Healthcare Sector",
+    "transportation": "Transportation Sector",
+    "retail": "Retail Sector",
+    "manufacturing": "Manufacturing Sector"
   },
   "about": {
     "title1": "Why",
-    "title2": "Choose Us",
-    "description": "Integrated Analytics is a leading digital transformation partner with over 15 years of experience helping enterprises across the Middle East and beyond achieve their technology goals. We combine deep industry expertise with cutting-edge solutions to deliver measurable business outcomes.",
+    "title2": "We Are Your Ideal Partner",
+    "description": "Integrated Analytics is a trusted technology partner with over 15 years of experience enabling leading organizations in the region to achieve their digital goals. We combine deep market understanding with cutting-edge technical solutions to deliver tangible, measurable results.",
     "stats": {
       "clients": "Enterprise Clients",
-      "experience": "Years Experience",
-      "uptime": "Uptime SLA",
-      "support": "Support Available"
+      "experience": "Years of Experience",
+      "uptime": "Uptime Rate",
+      "support": "Continuous Support"
     }
   },
   "howItWorks": {
-    "title1": "How It",
-    "title2": "Works",
-    "description": "Our proven methodology ensures successful digital transformation outcomes for every client.",
+    "title1": "Our",
+    "title2": "Methodology",
+    "description": "We follow a rigorous methodology that ensures exceptional results in every digital transformation project",
     "steps": [
       {
-        "title": "Discovery & Assessment",
-        "description": "We analyze your current systems, identify opportunities, and understand your business objectives."
+        "title": "Discovery & Analysis",
+        "description": "We start with a comprehensive analysis of your current systems, identifying opportunities and understanding your strategic objectives"
       },
       {
-        "title": "Strategy & Roadmap",
-        "description": "We design a comprehensive transformation strategy with clear milestones and KPIs."
+        "title": "Strategic Planning",
+        "description": "We design an integrated transformation roadmap with clear phases and specific performance indicators"
       },
       {
-        "title": "Implementation",
-        "description": "Our expert teams deliver solutions using agile methodologies and best practices."
+        "title": "Implementation & Deployment",
+        "description": "Our specialized team implements solutions using the latest methodologies and global best practices"
       },
       {
-        "title": "Support & Optimization",
-        "description": "Continuous monitoring, support, and optimization to ensure long-term success."
+        "title": "Monitoring & Development",
+        "description": "We provide continuous support and constant monitoring to ensure sustainable success"
       }
     ]
   },
   "features": {
-    "title1": "Key",
+    "title1": "Our Technical",
     "title2": "Capabilities",
-    "description": "Comprehensive solutions to drive your digital transformation",
+    "description": "Integrated solutions driving your digital transformation journey",
     "items": [
       {
-        "title": "Data Analytics & BI",
-        "description": "Transform raw data into actionable insights with our advanced analytics platforms, real-time dashboards, and AI-powered business intelligence solutions."
+        "title": "Data Analytics & Business Intelligence",
+        "description": "We transform your data into strategic insights through advanced analytical platforms, interactive dashboards, and AI-powered business intelligence solutions"
       },
       {
         "title": "Cloud Solutions",
-        "description": "Modernize your infrastructure with our secure cloud migration services, supporting AWS, Azure, and hybrid environments for optimal performance and scalability."
+        "description": "We develop your infrastructure through secure cloud migration services with full support for AWS, Azure platforms, and hybrid environments"
       },
       {
         "title": "AI & Machine Learning",
-        "description": "Harness the power of artificial intelligence with our custom ML models, predictive analytics, and intelligent automation solutions."
+        "description": "We harness AI capabilities through custom models, predictive analytics, and intelligent automation solutions"
       }
     ],
     "badges": [
       "Real-time Analytics",
       "Cloud Migration",
-      "AI/ML Solutions",
-      "Enterprise Apps",
+      "Smart Solutions",
+      "Enterprise Applications",
       "Cybersecurity",
-      "IoT Integration",
+      "IoT",
       "Process Automation",
       "Data Governance",
       "24/7 Support"
     ]
   },
   "services": {
-    "title1": "Enterprise-Grade",
-    "title2": "Services",
-    "description": "Comprehensive digital transformation services designed to accelerate your business growth and operational efficiency.",
+    "title1": "Professional",
+    "title2": "Integrated Services",
+    "description": "We deliver comprehensive digital transformation services designed to accelerate your business growth and enhance operational efficiency",
     "items": [
       {
-        "title": "Data Analytics & Insights",
-        "description": "Unlock the full potential of your data with advanced analytics, real-time reporting, and AI-powered business intelligence solutions."
+        "title": "Data Analytics & Strategic Insights",
+        "description": "We unleash the full potential of your data through advanced analytics, real-time reporting, and business intelligence solutions"
       },
       {
         "title": "Enterprise Applications",
-        "description": "Streamline operations with custom ERP solutions, CRM integrations, and enterprise-grade applications tailored to your business needs."
+        "description": "We simplify your operations through custom ERP solutions, CRM system integration, and applications designed to your needs"
       },
       {
-        "title": "Cloud & Infrastructure",
-        "description": "Modernize your IT infrastructure with secure cloud migration, hybrid solutions, and managed services for optimal performance."
+        "title": "Cloud Infrastructure",
+        "description": "We modernize your infrastructure through secure cloud migration, hybrid solutions, and managed services"
       }
     ]
   },
   "cta": {
-    "title1": "Ready to",
-    "title2": "Transform",
-    "title3": "Your Business?",
-    "description": "Let's discuss how Integrated Analytics can help you harness the power of data and technology to achieve your business goals. Schedule a free consultation with our experts today.",
-    "cta_primary": "Schedule a Demo",
-    "cta_secondary": "View Case Studies"
+    "title1": "Are You",
+    "title2": "Ready",
+    "title3": "to Launch?",
+    "description": "We look forward to discussing how to harness the power of data and technology to achieve your goals. Book a free consultation with our experts today.",
+    "cta_primary": "Book a Demo",
+    "cta_secondary": "View Success Stories"
   },
   "testimonials": {
     "title1": "What Our",
-    "title2": "Clients Say",
-    "description": "Trusted by leading enterprises across the region",
+    "title2": "Partners Say",
+    "description": "The trust of leading organizations in the region is the greatest testament to our service quality",
     "items": [
       {
         "name": "Mohammed Al-Faisal",
         "username": "@malfaisal",
-        "comment": "Integrated Analytics transformed our entire data infrastructure. Their expertise in banking analytics helped us reduce fraud by 40% and improve customer satisfaction scores significantly."
+        "comment": "Integrated Analytics created a radical transformation in our data infrastructure. Their expertise in the banking sector helped us reduce fraud by 40% and significantly improve customer satisfaction rates."
       },
       {
         "name": "Dr. Fatima Hassan",
         "username": "@drfhassan",
-        "comment": "The healthcare analytics solution they implemented has revolutionized our patient care. We now have real-time insights that help us make better clinical decisions."
+        "comment": "The healthcare analytics solution created a quantum leap in our patient care level. We now have real-time insights that support better and faster clinical decisions."
       },
       {
         "name": "Abdullah Al-Rashid",
         "username": "@arashid_ceo",
-        "comment": "Outstanding cloud migration project! They moved our entire ERP system to the cloud with zero downtime. Their team's professionalism and expertise are unmatched."
+        "comment": "An exceptional cloud migration experience! They moved the entire ERP system without any service interruption. The team's professionalism and depth of expertise are unmatched."
       },
       {
         "name": "Sarah Thompson",
         "username": "@sthompson_retail",
-        "comment": "The AI-powered demand forecasting solution has improved our inventory management by 35%. Integrated Analytics truly understands retail challenges."
+        "comment": "The AI-powered demand forecasting solution improved our inventory management by 35%. A team that deeply understands retail sector challenges."
       },
       {
         "name": "Khalid Al-Mansour",
         "username": "@kmansour_gov",
-        "comment": "Working with Integrated Analytics on our smart city initiative has been exceptional. Their IoT and analytics solutions are helping us build a more efficient city."
+        "comment": "Our collaboration on the smart city initiative was a distinguished experience. Their IoT and analytics solutions contribute to building a smarter and more efficient city."
       },
       {
         "name": "Nadia Khalil",
         "username": "@nkhalil_cfo",
-        "comment": "Their financial analytics platform gives us unprecedented visibility into our operations. The ROI we've achieved within the first year exceeded our expectations."
+        "comment": "The financial analytics platform gave us a comprehensive view of our operations. The ROI in the first year exceeded all our expectations."
       }
     ]
   },
   "team": {
-    "title1": "Our",
-    "title2": "Leadership",
-    "description": "Meet the experts driving digital transformation",
+    "title1": "Leadership",
+    "title2": "Team",
+    "description": "Meet the experts leading the digital transformation journey",
     "members": [
       {
         "name": "Omar Al-Farsi",
@@ -185,7 +185,7 @@
       },
       {
         "name": "Ahmed Mahmoud",
-        "position": "VP, Data Science"
+        "position": "VP of Data Science"
       },
       {
         "name": "Rania Al-Sayed",
@@ -195,88 +195,89 @@
   },
   "pricing": {
     "title1": "Flexible",
-    "title2": "Engagement",
-    "title3": "Models",
-    "description": "Tailored solutions with transparent pricing to match your business scale and requirements.",
+    "title2": "Plans",
+    "title3": "For You",
+    "description": "Carefully designed solutions with transparent pricing that matches your business size and needs",
     "plans": [
       {
-        "title": "Starter",
+        "title": "Basic Plan",
         "price": "Custom",
-        "suffix": "pricing",
-        "description": "Perfect for small businesses beginning their digital transformation journey.",
-        "cta": "Get a Quote",
+        "suffix": "Pricing",
+        "description": "The ideal choice for startups beginning their digital transformation journey",
+        "cta": "Request a Quote",
         "benefits": [
           "Basic Analytics Dashboard",
           "Up to 5 Users",
-          "Standard Support",
+          "Standard Technical Support",
           "Cloud Hosting",
           "Monthly Reports"
         ]
       },
       {
-        "title": "Professional",
+        "title": "Professional Plan",
         "price": "Custom",
-        "suffix": "pricing",
-        "description": "Comprehensive solutions for growing enterprises with advanced needs.",
-        "cta": "Schedule a Demo",
+        "suffix": "Pricing",
+        "description": "Integrated solutions for growing organizations with advanced requirements",
+        "cta": "Book a Demo",
         "popular": true,
         "benefits": [
           "Advanced Analytics & BI",
           "Up to 50 Users",
-          "24/7 Priority Support",
+          "24/7 Support",
           "Hybrid Cloud Options",
           "Real-time Dashboards"
         ]
       },
       {
-        "title": "Enterprise",
+        "title": "Enterprise Plan",
         "price": "Custom",
-        "suffix": "pricing",
-        "description": "Full-scale digital transformation with dedicated resources and support.",
-        "cta": "Contact Sales",
+        "suffix": "Pricing",
+        "description": "Comprehensive digital transformation with dedicated resources and premium support",
+        "cta": "Contact Sales Team",
         "benefits": [
-          "Complete Suite Access",
+          "Full Access to All Services",
           "Unlimited Users",
           "Dedicated Account Manager",
-          "On-premise & Cloud",
+          "Local & Cloud Deployment",
           "Custom Integrations"
         ]
       }
     ],
-    "mostPopular": "Most popular"
+    "mostPopular": "Most Requested"
   },
   "newsletter": {
-    "title1": "Stay Updated with",
-    "title2": "Industry Insights",
-    "description": "Subscribe to receive the latest trends in digital transformation, data analytics, and technology innovations.",
-    "placeholder": "your.email@company.com",
-    "cta": "Subscribe"
+    "title1": "Stay Updated",
+    "title2": "With Latest News",
+    "description": "Subscribe to receive the latest trends in digital transformation, data analytics, and technology innovations",
+    "placeholder": "Email Address",
+    "cta": "Subscribe Now",
+    "successMessage": "Thank you for subscribing! We'll keep you updated with the latest insights and news."
   },
   "faq": {
-    "title1": "Frequently Asked",
-    "title2": "Questions",
-    "stillQuestions": "Still have questions?",
-    "contactUs": "Contact us",
+    "title1": "Frequently",
+    "title2": "Asked Questions",
+    "stillQuestions": "Have other questions?",
+    "contactUs": "Contact Us",
     "items": [
       {
-        "question": "What industries does Integrated Analytics serve?",
-        "answer": "We serve a wide range of industries including banking and financial services, healthcare, government, retail, manufacturing, and transportation. Our solutions are tailored to meet the specific regulatory requirements and operational needs of each sector."
+        "question": "What sectors does Integrated Analytics serve?",
+        "answer": "We serve a wide range of sectors including: banking and financial services, healthcare, government sector, retail, manufacturing, and transportation. Our solutions are designed to meet the specific regulatory and operational requirements of each sector."
       },
       {
-        "question": "How long does a typical digital transformation project take?",
-        "answer": "Project timelines vary based on scope and complexity. A basic analytics implementation may take 4-8 weeks, while comprehensive enterprise transformations can span 6-12 months. We provide detailed timelines during our discovery phase and use agile methodologies to deliver value incrementally."
+        "question": "What is the expected duration for a digital transformation project?",
+        "answer": "Duration varies according to project scope and requirements. Basic analytics implementation may take 4 to 8 weeks, while comprehensive transformation projects extend from 6 to 12 months. We provide a detailed timeline during the discovery phase and adopt flexible methodologies to deliver value incrementally."
       },
       {
-        "question": "Do you offer both cloud and on-premise solutions?",
-        "answer": "Yes, we offer flexible deployment options including public cloud (AWS, Azure, GCP), private cloud, on-premise, and hybrid configurations. We help you choose the best architecture based on your security requirements, compliance needs, and performance goals."
+        "question": "Do you offer cloud and on-premise solutions?",
+        "answer": "We offer multiple deployment options including: public cloud (AWS, Azure, GCP), private cloud, on-premise deployment, and hybrid solutions. We help you choose the optimal architecture based on security, compliance, and performance requirements."
       },
       {
-        "question": "What kind of support do you provide after implementation?",
-        "answer": "We offer comprehensive post-implementation support including 24/7 technical assistance, regular system health checks, performance optimization, user training, and dedicated account management. Our enterprise clients receive priority support with guaranteed response times."
+        "question": "What level of support is provided after implementation?",
+        "answer": "We provide comprehensive support including: 24/7 technical assistance, periodic system performance checks, continuous improvements, and user training. Enterprise plan clients receive priority support with guaranteed response times."
       },
       {
         "question": "How do you ensure data security and compliance?",
-        "answer": "Security is built into every solution we deliver. We follow industry best practices, implement encryption at rest and in transit, conduct regular security audits, and ensure compliance with standards like ISO 27001, SOC 2, GDPR, and industry-specific regulations such as HIPAA for healthcare and PCI-DSS for financial services."
+        "answer": "Security is a fundamental pillar in all our solutions. We adhere to global best practices, implement comprehensive encryption, and conduct periodic security reviews. We ensure compliance with ISO 27001, SOC 2, and GDPR standards, in addition to sector-specific regulations like HIPAA for healthcare and PCI-DSS for financial services."
       }
     ]
   },
@@ -285,18 +286,19 @@
     "linkedin": "LinkedIn",
     "twitter": "Twitter",
     "youtube": "YouTube",
-    "services": "Services",
+    "services": "Our Services",
     "dataAnalytics": "Data Analytics",
     "cloudSolutions": "Cloud Solutions",
-    "enterpriseApps": "Enterprise Apps",
+    "enterpriseApps": "Enterprise Applications",
     "company": "Company",
     "aboutUs": "About Us",
     "ourTeam": "Our Team",
-    "caseStudies": "Case Studies",
+    "caseStudies": "Success Stories",
     "resources": "Resources",
     "faq": "FAQ",
-    "contact": "Contact",
+    "contact": "Contact Us",
     "newsletter": "Newsletter",
+    "privacy": "Privacy Policy",
     "copyright": "© 2024 Integrated Analytics. All rights reserved."
   },
   "languageToggle": {
@@ -306,10 +308,422 @@
   "modeToggle": {
     "light": "Light",
     "dark": "Dark",
-    "system": "System",
-    "toggleTheme": "Toggle theme"
+    "system": "Auto",
+    "toggleTheme": "Change Theme"
   },
-  "newsletter": {
-    "successMessage": "Thank you for subscribing! We'll keep you updated with the latest insights."
+  "aboutPage": {
+    "badge": "About Us",
+    "hero": {
+      "title1": "Your Trusted Partner in",
+      "title2": "Digital Transformation",
+      "description": "For over 15 years, we have been enabling leading organizations to achieve their digital goals by combining deep industry expertise with cutting-edge technology solutions."
+    },
+    "stats": {
+      "clients": "Enterprise Clients",
+      "experience": "Years of Experience",
+      "projects": "Successful Projects",
+      "experts": "Expert Professionals"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the leading technology partner in the region, driving digital excellence and enabling organizations to thrive in the digital age through innovative solutions and exceptional service."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To empower organizations with transformative technology solutions that drive growth, enhance efficiency, and create sustainable competitive advantages in an ever-evolving digital landscape."
+    },
+    "story": {
+      "title": "Our Story",
+      "subtitle": "A journey of innovation and growth",
+      "paragraph1": "Founded in 2009, Integrated Analytics began with a simple yet powerful vision: to bridge the gap between complex data and actionable business insights. What started as a small team of passionate data scientists has grown into a full-service digital transformation partner.",
+      "paragraph2": "Over the years, we have expanded our capabilities to include cloud services, AI/ML solutions, enterprise applications, and cybersecurity. Our growth has been driven by our unwavering commitment to client success and our ability to stay ahead of technological trends.",
+      "paragraph3": "Today, we serve over 200 enterprise clients across multiple industries, helping them navigate their digital transformation journeys with confidence. Our team of 50+ experts brings together diverse expertise to deliver solutions that create real business value."
+    },
+    "timeline": {
+      "title": "Our Journey",
+      "subtitle": "Key milestones that shaped who we are"
+    },
+    "milestones": {
+      "founded": "Company Founded",
+      "expansion": "Expanded to Enterprise Analytics",
+      "cloud": "Launched Cloud Services Division",
+      "ai": "Introduced AI & ML Solutions",
+      "regional": "Regional Expansion",
+      "enterprise": "500+ Enterprise Projects Completed"
+    },
+    "values": {
+      "badge": "Our Values",
+      "title": "What Drives Us",
+      "subtitle": "The principles that guide everything we do",
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly explore new technologies and methodologies to deliver cutting-edge solutions."
+      },
+      "excellence": {
+        "title": "Excellence",
+        "description": "We strive for the highest standards in everything we do, from code to customer service."
+      },
+      "collaboration": {
+        "title": "Collaboration",
+        "description": "We work as true partners with our clients, sharing knowledge and building lasting relationships."
+      },
+      "integrity": {
+        "title": "Integrity",
+        "description": "We operate with transparency, honesty, and ethical practices in all our dealings."
+      },
+      "agility": {
+        "title": "Agility",
+        "description": "We adapt quickly to changing needs and deliver value through iterative, flexible approaches."
+      },
+      "commitment": {
+        "title": "Commitment",
+        "description": "We are dedicated to our clients' success and go above and beyond to deliver results."
+      }
+    }
+  },
+  "servicesPage": {
+    "badge": "Our Services",
+    "hero": {
+      "title1": "Enterprise-Grade",
+      "title2": "Solutions",
+      "description": "Comprehensive digital transformation services designed to accelerate your business growth and operational efficiency."
+    },
+    "services": {
+      "dataAnalytics": {
+        "title": "Data Analytics & BI",
+        "description": "Transform your raw data into actionable insights with our advanced analytics platforms. We help you make data-driven decisions through real-time dashboards, predictive analytics, and AI-powered business intelligence.",
+        "features": [
+          "Real-time Analytics Dashboards",
+          "Predictive Analytics & Forecasting",
+          "Business Intelligence Solutions",
+          "Data Visualization & Reporting",
+          "Self-service Analytics Tools"
+        ]
+      },
+      "cloud": {
+        "title": "Cloud Solutions",
+        "description": "Modernize your infrastructure with our secure, scalable cloud solutions. We support multi-cloud and hybrid environments to optimize your performance and reduce costs.",
+        "features": [
+          "Cloud Migration & Strategy",
+          "AWS, Azure & GCP Services",
+          "Hybrid Cloud Architecture",
+          "Cloud Cost Optimization",
+          "Managed Cloud Services"
+        ]
+      },
+      "ai": {
+        "title": "AI & Machine Learning",
+        "description": "Harness the power of artificial intelligence to automate processes, uncover insights, and drive innovation across your organization.",
+        "features": [
+          "Custom ML Model Development",
+          "Natural Language Processing",
+          "Computer Vision Solutions",
+          "Intelligent Automation",
+          "AI Strategy Consulting"
+        ]
+      },
+      "enterprise": {
+        "title": "Enterprise Applications",
+        "description": "Streamline your operations with tailored enterprise solutions including ERP, CRM, and custom applications built for your specific business needs.",
+        "features": [
+          "ERP Implementation & Customization",
+          "CRM Integration Solutions",
+          "Custom Application Development",
+          "Legacy System Modernization",
+          "API Development & Integration"
+        ]
+      },
+      "cybersecurity": {
+        "title": "Cybersecurity",
+        "description": "Protect your digital assets with our comprehensive security services. We help you identify vulnerabilities, implement robust defenses, and maintain compliance.",
+        "features": [
+          "Security Assessment & Audit",
+          "Threat Detection & Response",
+          "Identity & Access Management",
+          "Compliance & Governance",
+          "Security Operations Center"
+        ]
+      },
+      "mobility": {
+        "title": "Mobility & Customer Experience",
+        "description": "Create exceptional digital experiences across all touchpoints. We design and build mobile apps and customer platforms that drive engagement and loyalty.",
+        "features": [
+          "Mobile App Development",
+          "Customer Portal Solutions",
+          "UX/UI Design Services",
+          "Omnichannel Experiences",
+          "Digital Customer Journey"
+        ]
+      },
+      "infrastructure": {
+        "title": "Infrastructure & Operations",
+        "description": "Build a resilient, scalable IT foundation with our infrastructure services. We help you optimize operations and ensure high availability.",
+        "features": [
+          "Infrastructure Design & Implementation",
+          "IT Operations Management",
+          "DevOps & Automation",
+          "Monitoring & Observability",
+          "Disaster Recovery Planning"
+        ]
+      }
+    },
+    "learnMore": "Learn More",
+    "whyChoose": "Why Choose Us",
+    "satisfaction": "Client Satisfaction",
+    "support": "Support Available",
+    "implementations": "Implementations",
+    "yearsExperience": "Years Experience"
+  },
+  "industriesPage": {
+    "badge": "Industries",
+    "hero": {
+      "title1": "Sector-Specific",
+      "title2": "Expertise",
+      "description": "Deep industry knowledge combined with technical excellence to deliver solutions that address your unique sector challenges."
+    },
+    "industries": {
+      "banking": {
+        "title": "Banking & Financial Services",
+        "description": "Drive digital banking transformation with secure, compliant solutions that enhance customer experience and operational efficiency.",
+        "solutions": ["Core Banking", "Risk Analytics", "Fraud Detection", "Digital Payments"]
+      },
+      "government": {
+        "title": "Government",
+        "description": "Enable smart government initiatives with solutions that improve citizen services, enhance transparency, and drive efficiency.",
+        "solutions": ["e-Government", "Smart City", "Digital ID", "Public Services"]
+      },
+      "healthcare": {
+        "title": "Healthcare",
+        "description": "Transform patient care with solutions that improve outcomes, streamline operations, and ensure compliance with healthcare regulations.",
+        "solutions": ["Patient Analytics", "EHR Integration", "Telemedicine", "Clinical Decision Support"]
+      },
+      "retail": {
+        "title": "Retail & E-commerce",
+        "description": "Create seamless shopping experiences with solutions that drive sales, optimize inventory, and build customer loyalty.",
+        "solutions": ["Demand Forecasting", "Customer Analytics", "Inventory Optimization", "Omnichannel Commerce"]
+      },
+      "manufacturing": {
+        "title": "Manufacturing",
+        "description": "Optimize production and supply chain with Industry 4.0 solutions that drive efficiency and quality.",
+        "solutions": ["Predictive Maintenance", "Supply Chain Analytics", "Quality Control", "Smart Factory"]
+      },
+      "transportation": {
+        "title": "Transportation & Logistics",
+        "description": "Streamline operations and enhance visibility across your transportation network with intelligent logistics solutions.",
+        "solutions": ["Fleet Management", "Route Optimization", "Supply Chain Visibility", "Warehouse Automation"]
+      },
+      "education": {
+        "title": "Education",
+        "description": "Enable digital learning and improve educational outcomes with modern technology solutions.",
+        "solutions": ["Learning Management", "Student Analytics", "Virtual Classrooms", "Education Apps"]
+      },
+      "telecom": {
+        "title": "Telecommunications",
+        "description": "Drive network efficiency and customer satisfaction with advanced telecom solutions.",
+        "solutions": ["Network Analytics", "Customer Experience", "Revenue Assurance", "5G Solutions"]
+      }
+    },
+    "expertise": {
+      "title": "Why Industry Expertise Matters",
+      "description": "Our deep sector knowledge ensures solutions that address your specific challenges and compliance requirements.",
+      "years": "Years of Experience",
+      "yearsDesc": "Serving enterprises across sectors",
+      "sectors": "Industry Sectors",
+      "sectorsDesc": "Specialized expertise and solutions",
+      "clients": "Enterprise Clients",
+      "clientsDesc": "Trusted by leading organizations"
+    },
+    "cta": {
+      "title": "Ready to Transform Your Industry?",
+      "description": "Let's discuss how our industry expertise can help you achieve your digital transformation goals.",
+      "button": "Schedule a Consultation"
+    }
+  },
+  "contactPage": {
+    "badge": "Contact Us",
+    "hero": {
+      "title1": "Let's Start a",
+      "title2": "Conversation",
+      "description": "We're here to answer your questions and discuss how we can help transform your business."
+    },
+    "form": {
+      "title": "Send Us a Message",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Enter your last name",
+      "email": "Email Address",
+      "emailPlaceholder": "your.email@company.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+966 XX XXX XXXX",
+      "company": "Company Name",
+      "companyPlaceholder": "Your company name",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project or inquiry...",
+      "submit": "Send Message",
+      "successTitle": "Message Sent Successfully!",
+      "successMessage": "Thank you for reaching out. Our team will get back to you within 24 hours."
+    },
+    "info": {
+      "title": "Contact Information",
+      "address": {
+        "title": "Office Address",
+        "line1": "King Fahd Road",
+        "line2": "Riyadh, Saudi Arabia"
+      },
+      "phone": {
+        "title": "Phone"
+      },
+      "email": {
+        "title": "Email"
+      },
+      "hours": {
+        "title": "Working Hours",
+        "weekdays": "Sunday - Thursday: 9AM - 6PM",
+        "weekend": "Friday - Saturday: Closed"
+      }
+    },
+    "offices": {
+      "title": "Our Offices",
+      "riyadh": "Riyadh",
+      "jeddah": "Jeddah",
+      "headquarters": "Headquarters",
+      "regionalOffice": "Regional Office"
+    },
+    "mapPlaceholder": "Interactive map will be displayed here"
+  },
+  "careersPage": {
+    "badge": "Join Our Team",
+    "hero": {
+      "title1": "Build Your",
+      "title2": "Future With Us",
+      "description": "Join a team of passionate innovators who are shaping the future of digital transformation. We're always looking for talented individuals."
+    },
+    "stats": {
+      "employees": "Team Members",
+      "nationalities": "Nationalities",
+      "women": "Women in Tech",
+      "rating": "Employee Rating"
+    },
+    "whyJoin": {
+      "title": "Why Join Integrated Analytics?",
+      "description": "We offer more than just a job – we offer a career with purpose, growth opportunities, and a supportive environment."
+    },
+    "benefits": {
+      "health": {
+        "title": "Health & Wellness",
+        "description": "Comprehensive health insurance and wellness programs for you and your family."
+      },
+      "learning": {
+        "title": "Learning & Development",
+        "description": "Continuous learning opportunities, certifications, and conference attendance."
+      },
+      "balance": {
+        "title": "Work-Life Balance",
+        "description": "Flexible working hours and generous paid time off to recharge."
+      },
+      "remote": {
+        "title": "Remote Flexibility",
+        "description": "Hybrid work model with options to work from home when needed."
+      },
+      "growth": {
+        "title": "Career Growth",
+        "description": "Clear career paths with mentorship and promotion opportunities."
+      },
+      "bonus": {
+        "title": "Performance Bonus",
+        "description": "Competitive compensation with annual performance-based bonuses."
+      }
+    },
+    "positions": {
+      "title": "Open Positions",
+      "description": "Explore our current opportunities and find your next career move.",
+      "apply": "Apply Now"
+    },
+    "jobs": {
+      "fullTime": "Full-time",
+      "seniorDataEngineer": {
+        "title": "Senior Data Engineer",
+        "department": "Data & Analytics",
+        "location": "Riyadh"
+      },
+      "cloudArchitect": {
+        "title": "Cloud Solutions Architect",
+        "department": "Cloud Services",
+        "location": "Riyadh"
+      },
+      "aiEngineer": {
+        "title": "AI/ML Engineer",
+        "department": "AI & Innovation",
+        "location": "Riyadh"
+      },
+      "projectManager": {
+        "title": "Senior Project Manager",
+        "department": "Delivery",
+        "location": "Jeddah"
+      },
+      "uiDesigner": {
+        "title": "UI/UX Designer",
+        "department": "Design",
+        "location": "Remote"
+      },
+      "securityAnalyst": {
+        "title": "Security Analyst",
+        "department": "Cybersecurity",
+        "location": "Riyadh"
+      }
+    },
+    "cta": {
+      "title": "Don't See the Right Role?",
+      "description": "We're always looking for talented individuals. Send us your resume and we'll keep you in mind for future opportunities.",
+      "button": "Submit Your Resume"
+    }
+  },
+  "privacyPage": {
+    "badge": "Legal",
+    "hero": {
+      "title": "Privacy Policy",
+      "description": "We are committed to protecting your privacy and ensuring the security of your personal information."
+    },
+    "lastUpdated": "Last Updated",
+    "updateDate": "January 1, 2024",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "This Privacy Policy describes how Integrated Analytics collects, uses, and protects your personal information when you use our website and services. By using our services, you agree to the collection and use of information in accordance with this policy."
+      },
+      "dataCollection": {
+        "title": "Information We Collect",
+        "content": "We collect information that you provide directly to us, including:\n• Contact information (name, email, phone number)\n• Company information\n• Communication preferences\n• Information provided through contact forms\n• Technical data (IP address, browser type, device information)"
+      },
+      "dataUsage": {
+        "title": "How We Use Your Information",
+        "content": "We use the collected information to:\n• Provide and improve our services\n• Respond to your inquiries and requests\n• Send relevant updates and marketing communications (with your consent)\n• Analyze usage patterns to improve user experience\n• Comply with legal obligations"
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. These measures include encryption, access controls, and regular security assessments."
+      },
+      "cookies": {
+        "title": "Cookies and Tracking",
+        "content": "We use cookies and similar technologies to enhance your experience on our website. You can control cookie settings through your browser preferences. Essential cookies are required for basic functionality, while analytics and marketing cookies help us understand and improve our services."
+      },
+      "thirdParty": {
+        "title": "Third-Party Services",
+        "content": "We may share your information with trusted third-party service providers who assist us in operating our website and services. These providers are contractually obligated to protect your information and use it only for the purposes we specify."
+      },
+      "userRights": {
+        "title": "Your Rights",
+        "content": "You have the right to:\n• Access your personal information\n• Request correction of inaccurate data\n• Request deletion of your data\n• Opt-out of marketing communications\n• Request data portability\nTo exercise these rights, please contact us using the information provided below."
+      },
+      "updates": {
+        "title": "Policy Updates",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new policy on this page and updating the 'Last Updated' date. We encourage you to review this policy periodically."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this Privacy Policy or our data practices, please contact us at:\n\nEmail: privacy@integratedanalytics.com\nPhone: +966 11 XXX XXXX\nAddress: King Fahd Road, Riyadh, Saudi Arabia"
+      }
+    }
   }
 }

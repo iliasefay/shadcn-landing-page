@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link, useLocation } from "react-router-dom";
 import i18n from "i18next";
 import {
   NavigationMenu,
@@ -23,28 +24,25 @@ import { LogoIcon } from "./Icons";
 interface RouteProps {
   href: string;
   labelKey: string;
+  isExternal?: boolean;
 }
 
 const routeList: RouteProps[] = [
   {
-    href: "#services",
+    href: "/about",
+    labelKey: "navbar.about",
+  },
+  {
+    href: "/services",
     labelKey: "navbar.services",
   },
   {
-    href: "#features",
-    labelKey: "navbar.solutions",
+    href: "/industries",
+    labelKey: "navbar.industries",
   },
   {
-    href: "#testimonials",
-    labelKey: "navbar.clients",
-  },
-  {
-    href: "#pricing",
-    labelKey: "navbar.plans",
-  },
-  {
-    href: "#faq",
-    labelKey: "navbar.faq",
+    href: "/careers",
+    labelKey: "navbar.careers",
   },
 ];
 
@@ -52,20 +50,22 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const { t } = useTranslation();
   const isRTL = i18n.language === "ar";
+  const location = useLocation();
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <header className="sticky border-b-[1px] top-0 z-40 w-full bg-white dark:border-b-slate-700 dark:bg-background">
       <NavigationMenu className="mx-auto">
         <NavigationMenuList className="container h-14 px-4 w-screen flex justify-between">
           <NavigationMenuItem className="font-bold flex">
-            <a
-              rel="noreferrer noopener"
-              href="/"
+            <Link
+              to="/"
               className="ltr:ml-2 rtl:mr-2 font-bold text-xl flex gap-1"
             >
               <LogoIcon />
-              {t('navbar.brand')}
-            </a>
+              {t("navbar.brand")}
+            </Link>
           </NavigationMenuItem>
 
           {/* mobile */}
@@ -73,10 +73,7 @@ export const Navbar = () => {
             <LanguageToggle />
             <ModeToggle />
 
-            <Sheet
-              open={isOpen}
-              onOpenChange={setIsOpen}
-            >
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger className="px-2">
                 <Menu
                   className="flex md:hidden h-5 w-5"
@@ -89,30 +86,31 @@ export const Navbar = () => {
               <SheetContent side={isRTL ? "right" : "left"}>
                 <SheetHeader>
                   <SheetTitle className="font-bold text-xl">
-                    {t('navbar.brand')}
+                    {t("navbar.brand")}
                   </SheetTitle>
                 </SheetHeader>
                 <nav className="flex flex-col justify-center items-center gap-2 mt-4">
                   {routeList.map(({ href, labelKey }: RouteProps) => (
-                    <a
-                      rel="noreferrer noopener"
+                    <Link
                       key={labelKey}
-                      href={href}
+                      to={href}
                       onClick={() => setIsOpen(false)}
-                      className={buttonVariants({ variant: "ghost" })}
+                      className={`${buttonVariants({ variant: "ghost" })} ${
+                        isActive(href) ? "bg-muted" : ""
+                      }`}
                     >
                       {t(labelKey)}
-                    </a>
+                    </Link>
                   ))}
-                  <a
-                    rel="noreferrer noopener"
-                    href="#cta"
+                  <Link
+                    to="/contact"
+                    onClick={() => setIsOpen(false)}
                     className={`w-[110px] border ${buttonVariants({
                       variant: "secondary",
                     })}`}
                   >
-                    {t('footer.contact')}
-                  </a>
+                    {t("navbar.contact")}
+                  </Link>
                 </nav>
               </SheetContent>
             </Sheet>
@@ -121,27 +119,27 @@ export const Navbar = () => {
           {/* desktop */}
           <nav className="hidden md:flex gap-2">
             {routeList.map((route: RouteProps, i) => (
-              <a
-                rel="noreferrer noopener"
-                href={route.href}
+              <Link
+                to={route.href}
                 key={i}
                 className={`text-[17px] ${buttonVariants({
                   variant: "ghost",
-                })}`}
+                })} ${isActive(route.href) ? "bg-muted" : ""}`}
               >
                 {t(route.labelKey)}
-              </a>
+              </Link>
             ))}
           </nav>
 
           <div className="hidden md:flex gap-2">
-            <a
-              rel="noreferrer noopener"
-              href="#cta"
-              className={`border ${buttonVariants({ variant: "secondary" })}`}
+            <Link
+              to="/contact"
+              className={`border ${buttonVariants({ variant: "secondary" })} ${
+                isActive("/contact") ? "bg-muted" : ""
+              }`}
             >
-              {t('footer.contact')}
-            </a>
+              {t("navbar.contact")}
+            </Link>
 
             <LanguageToggle />
             <ModeToggle />
