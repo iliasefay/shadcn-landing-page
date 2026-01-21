@@ -13,6 +13,8 @@ import {
   Sparkles,
 } from "lucide-react";
 import { Team } from "@/components/Team";
+import { AnimatedCounter } from "@/components/AnimatedCounter";
+import { SEO } from "@/components/SEO";
 
 export function AboutPage() {
   const { t, i18n } = useTranslation();
@@ -62,6 +64,10 @@ export function AboutPage() {
 
   return (
     <div className={isRTL ? "rtl" : "ltr"}>
+      <SEO
+        title={t("aboutPage.seo.title", "About Us")}
+        description={t("aboutPage.seo.description", "Learn about our journey, mission, and the values that drive us to deliver exceptional digital transformation solutions.")}
+      />
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 bg-gradient-to-br from-primary/10 via-background to-background">
         <div className="container mx-auto px-4">
@@ -86,7 +92,7 @@ export function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
-                200+
+                <AnimatedCounter end={200} suffix="+" />
               </div>
               <div className="text-muted-foreground">
                 {t("aboutPage.stats.clients")}
@@ -94,7 +100,7 @@ export function AboutPage() {
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
-                15+
+                <AnimatedCounter end={15} suffix="+" />
               </div>
               <div className="text-muted-foreground">
                 {t("aboutPage.stats.experience")}
@@ -102,7 +108,7 @@ export function AboutPage() {
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
-                500+
+                <AnimatedCounter end={500} suffix="+" />
               </div>
               <div className="text-muted-foreground">
                 {t("aboutPage.stats.projects")}
@@ -110,7 +116,7 @@ export function AboutPage() {
             </div>
             <div className="text-center">
               <div className="text-4xl md:text-5xl font-bold text-primary mb-2">
-                50+
+                <AnimatedCounter end={50} suffix="+" />
               </div>
               <div className="text-muted-foreground">
                 {t("aboutPage.stats.experts")}

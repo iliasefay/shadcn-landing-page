@@ -4,6 +4,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Layout } from "./components/layout/Layout";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { PageLoader } from "./components/LoadingSpinner";
+import { ProgressBar } from "./components/ProgressBar";
+import { CookieConsent } from "./components/CookieConsent";
 import "./App.css";
 
 // Lazy load pages for better performance
@@ -71,11 +73,13 @@ function App() {
   return (
     <ErrorBoundary>
       <Router>
+        <ProgressBar />
         <Layout>
           <Suspense fallback={<PageLoader />}>
             <AnimatedRoutes />
           </Suspense>
         </Layout>
+        <CookieConsent />
       </Router>
     </ErrorBoundary>
   );
