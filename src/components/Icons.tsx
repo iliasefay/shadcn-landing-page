@@ -2,23 +2,21 @@ export const LogoIcon = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="lucide lucide-panels-top-left mr-2 w-6 h-6"
+      viewBox="0 0 100 100"
+      className="mr-2 w-6 h-6"
     >
-      <rect
-        width="18"
-        height="18"
-        x="3"
-        y="3"
-        rx="2"
-      />
-      <path d="M3 9h18" />
-      <path d="M9 21V9" />
+      <defs>
+        <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{ stopColor: '#6366f1', stopOpacity: 1 }} />
+          <stop offset="100%" style={{ stopColor: '#8b5cf6', stopOpacity: 1 }} />
+        </linearGradient>
+      </defs>
+      <rect width="100" height="100" rx="20" fill="url(#logoGrad)"/>
+      <path d="M30 35 L50 25 L70 35 L70 55 L50 65 L30 55 Z" fill="none" stroke="white" strokeWidth="4"/>
+      <path d="M50 25 L50 65" stroke="white" strokeWidth="3"/>
+      <path d="M30 35 L70 55" stroke="white" strokeWidth="3"/>
+      <path d="M70 35 L30 55" stroke="white" strokeWidth="3"/>
+      <circle cx="50" cy="45" r="10" fill="white"/>
     </svg>
   );
 };
