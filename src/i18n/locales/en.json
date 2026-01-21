@@ -299,7 +299,7 @@
     "contact": "Contact Us",
     "newsletter": "Newsletter",
     "privacy": "Privacy Policy",
-    "copyright": "© 2024 Integrated Analytics. All rights reserved."
+    "copyright": "© 2025 Integrated Analytics. All rights reserved."
   },
   "languageToggle": {
     "en": "EN",
@@ -572,10 +572,14 @@
         "line2": "Riyadh, Saudi Arabia"
       },
       "phone": {
-        "title": "Phone"
+        "title": "Phone",
+        "main": "+966 11 234 5678",
+        "support": "+966 11 234 5679"
       },
       "email": {
-        "title": "Email"
+        "title": "Email",
+        "main": "info@integratedanalytics.sa",
+        "support": "support@integratedanalytics.sa"
       },
       "hours": {
         "title": "Working Hours",

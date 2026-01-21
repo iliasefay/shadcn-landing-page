@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Avatar, AvatarFallback } from "./ui/avatar";
 import { Badge } from "./ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
@@ -13,6 +13,16 @@ import {
 import { Check, Linkedin } from "lucide-react";
 import { LightBulbIcon } from "./Icons";
 
+// Generate initials from name
+const getInitials = (name: string) => {
+  return name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .toUpperCase()
+    .slice(0, 2);
+};
+
 export const HeroCards = () => {
   const { t } = useTranslation();
 
@@ -21,12 +31,10 @@ export const HeroCards = () => {
       {/* Testimonial */}
       <Card className="absolute w-[280px] xl:w-[340px] -top-[15px] drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="flex flex-row items-center gap-4 pb-2">
-          <Avatar>
-            <AvatarImage
-              alt=""
-              src="https://i.pravatar.cc/150?img=33"
-            />
-            <AvatarFallback>AM</AvatarFallback>
+          <Avatar className="bg-primary">
+            <AvatarFallback className="text-white font-semibold">
+              {getInitials(t('heroCards.testimonial_name'))}
+            </AvatarFallback>
           </Avatar>
 
           <div className="flex flex-col">
@@ -41,11 +49,11 @@ export const HeroCards = () => {
       {/* Team */}
       <Card className="absolute right-0 xl:right-[20px] top-4 w-64 xl:w-80 flex flex-col justify-center items-center drop-shadow-xl shadow-black/10 dark:shadow-white/10">
         <CardHeader className="mt-8 flex justify-center items-center pb-2">
-          <img
-            src="https://i.pravatar.cc/150?img=68"
-            alt="user avatar"
-            className="absolute grayscale-[0%] -top-12 rounded-full w-24 h-24 aspect-square object-cover"
-          />
+          <div className="absolute -top-12 rounded-full w-24 h-24 bg-gradient-to-br from-primary to-teal-500 flex items-center justify-center">
+            <span className="text-white text-2xl font-bold">
+              {getInitials(t('heroCards.team_name'))}
+            </span>
+          </div>
           <CardTitle className="text-center">{t('heroCards.team_name')}</CardTitle>
           <CardDescription className="font-normal text-primary">
             {t('heroCards.team_title')}

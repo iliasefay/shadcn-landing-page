@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Avatar, AvatarFallback } from "./ui/avatar";
 import {
   Card,
   CardContent,
@@ -8,13 +8,24 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-const avatarImages = [
-  "https://i.pravatar.cc/150?img=33",
-  "https://i.pravatar.cc/150?img=47",
-  "https://i.pravatar.cc/150?img=32",
-  "https://i.pravatar.cc/150?img=44",
-  "https://i.pravatar.cc/150?img=52",
-  "https://i.pravatar.cc/150?img=20",
+// Generate initials from name
+const getInitials = (name: string) => {
+  return name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .toUpperCase()
+    .slice(0, 2);
+};
+
+// Brand colors for avatar backgrounds
+const avatarColors = [
+  "bg-primary",
+  "bg-teal-600",
+  "bg-blue-600",
+  "bg-primary/80",
+  "bg-teal-500",
+  "bg-blue-500",
 ];
 
 export const Testimonials = () => {
@@ -45,12 +56,10 @@ export const Testimonials = () => {
             className="max-w-md md:break-inside-avoid overflow-hidden"
           >
             <CardHeader className="flex flex-row items-center gap-4 pb-2">
-              <Avatar>
-                <AvatarImage
-                  alt=""
-                  src={avatarImages[index]}
-                />
-                <AvatarFallback>OM</AvatarFallback>
+              <Avatar className={avatarColors[index % avatarColors.length]}>
+                <AvatarFallback className="text-white font-semibold">
+                  {getInitials(testimonial.name)}
+                </AvatarFallback>
               </Avatar>
 
               <div className="flex flex-col">

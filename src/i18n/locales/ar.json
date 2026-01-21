@@ -572,10 +572,14 @@
         "line2": "الرياض، المملكة العربية السعودية"
       },
       "phone": {
-        "title": "الهاتف"
+        "title": "الهاتف",
+        "main": "+966 11 234 5678",
+        "support": "+966 11 234 5679"
       },
       "email": {
-        "title": "البريد الإلكتروني"
+        "title": "البريد الإلكتروني",
+        "main": "info@integratedanalytics.sa",
+        "support": "support@integratedanalytics.sa"
       },
       "hours": {
         "title": "ساعات العمل",

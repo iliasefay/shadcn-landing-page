@@ -45,12 +45,12 @@ export function ContactPage() {
     {
       icon: <Phone className="w-6 h-6" />,
       title: t("contactPage.info.phone.title"),
-      details: ["+966 11 XXX XXXX", "+966 11 XXX XXXX"],
+      details: [t("contactPage.info.phone.main"), t("contactPage.info.phone.support")],
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: t("contactPage.info.email.title"),
-      details: ["info@company.com", "support@company.com"],
+      details: [t("contactPage.info.email.main"), t("contactPage.info.email.support")],
     },
     {
       icon: <Clock className="w-6 h-6" />,
