@@ -90,10 +90,10 @@ export function ContactPage() {
                 {t("contactPage.form.title")}
               </h2>
               {formSubmitted ? (
-                <Card className="border-2 border-green-500/50 bg-green-500/10">
+                <Card className="border-2 border-success/50 bg-success/10">
                   <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-4">
-                      <Send className="w-8 h-8 text-green-500" />
+                    <div className="w-16 h-16 rounded-full bg-success/20 flex items-center justify-center mx-auto mb-4">
+                      <Send className="w-8 h-8 text-success" />
                     </div>
                     <h3 className="text-xl font-bold mb-2">
                       {t("contactPage.form.successTitle")}

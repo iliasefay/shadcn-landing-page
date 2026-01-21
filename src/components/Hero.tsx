@@ -11,13 +11,13 @@ export const Hero = () => {
       <div className="text-center lg:text-start space-y-6">
         <main className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
           <h1 className="inline">
-            <span className="inline bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text">
+            <span className="inline bg-gradient-to-r from-primary to-blue-600 text-transparent bg-clip-text">
               {t('hero.title1')}
             </span>{" "}
             {t('hero.title2')}
           </h1>{" "}
           <h2 className="inline">
-            <span className="inline bg-gradient-to-r from-[#61DAFB] via-[#1fc0f1] to-[#03a3d7] text-transparent bg-clip-text">
+            <span className="inline bg-gradient-to-r from-teal-500 to-primary text-transparent bg-clip-text">
               {t('hero.title3')}
             </span>{" "}
             {t('hero.title4')}

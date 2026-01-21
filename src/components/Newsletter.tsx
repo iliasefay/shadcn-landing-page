@@ -52,7 +52,7 @@ export const Newsletter = () => {
         </form>
 
         {isSubmitted && (
-          <div className="flex items-center justify-center gap-2 mt-4 text-green-600 dark:text-green-400">
+          <div className="flex items-center justify-center gap-2 mt-4 text-success">
             <Check className="h-5 w-5" />
             <p>{t('newsletter.successMessage')}</p>
           </div>

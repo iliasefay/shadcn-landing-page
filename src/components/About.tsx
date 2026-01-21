@@ -17,7 +17,7 @@ export const About = () => {
             alt=""
             className="w-full sm:w-[250px] md:w-[300px] object-contain rounded-lg mx-auto md:mx-0"
           />
-          <div className="bg-green-0 flex flex-col justify-between">
+          <div className="flex flex-col justify-between">
             <div className="pb-6">
               <h2 className="text-3xl md:text-4xl font-bold">
                 <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
