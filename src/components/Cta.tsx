@@ -19,7 +19,7 @@ export const Cta = () => {
             </span>
             {t('cta.title3')}
           </h2>
-          <p className="text-muted-foreground text-xl mt-4 mb-8 lg:mb-0">
+          <p className="text-muted-foreground text-base sm:text-lg md:text-xl mt-4 mb-8 lg:mb-0">
             {t('cta.description')}
           </p>
         </div>

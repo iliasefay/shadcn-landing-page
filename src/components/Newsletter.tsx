@@ -25,13 +25,13 @@ export const Newsletter = () => {
       <hr className="w-11/12 mx-auto" />
 
       <div className="container py-24 sm:py-32">
-        <h3 className="text-center text-4xl md:text-5xl font-bold">
+        <h3 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
           {t('newsletter.title1')}{" "}
           <span className="bg-gradient-to-b from-primary/60 to-primary text-transparent bg-clip-text">
             {t('newsletter.title2')}
           </span>
         </h3>
-        <p className="text-xl text-muted-foreground text-center mt-4 mb-8">
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground text-center mt-4 mb-8">
           {t('newsletter.description')}
         </p>
 

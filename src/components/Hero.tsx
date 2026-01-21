@@ -9,7 +9,7 @@ export const Hero = () => {
   return (
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
       <div className="text-center lg:text-start space-y-6">
-        <main className="text-5xl md:text-6xl font-bold">
+        <main className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">
           <h1 className="inline">
             <span className="inline bg-gradient-to-r from-[#F596D3] to-[#D247BF] text-transparent bg-clip-text">
               {t('hero.title1')}
@@ -24,7 +24,7 @@ export const Hero = () => {
           </h2>
         </main>
 
-        <p className="text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground md:w-10/12 mx-auto lg:mx-0">
           {t('hero.description')}
         </p>
 

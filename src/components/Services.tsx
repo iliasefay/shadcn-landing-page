@@ -20,7 +20,7 @@ export const Services = () => {
             {t('services.title2')}
           </h2>
 
-          <p className="text-muted-foreground text-xl mt-4 mb-8">
+          <p className="text-muted-foreground text-base sm:text-lg md:text-xl mt-4 mb-8">
             {t('services.description')}
           </p>
 
@@ -45,7 +45,7 @@ export const Services = () => {
 
         <img
           src={cubeLeg}
-          className="w-[300px] md:w-[500px] lg:w-[600px] object-contain"
+          className="w-full max-w-[300px] sm:max-w-[400px] md:max-w-[500px] lg:max-w-[600px] object-contain mx-auto"
           alt="About services"
         />
       </div>

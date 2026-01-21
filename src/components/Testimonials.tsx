@@ -34,11 +34,11 @@ export const Testimonials = () => {
         </span>
       </h2>
 
-      <p className="text-xl text-muted-foreground pt-4 pb-8">
+      <p className="text-base sm:text-lg md:text-xl text-muted-foreground pt-4 pb-8">
         {t('testimonials.description')}
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 sm:block columns-2 lg:columns-3 lg:gap-6 mx-auto space-y-4 lg:space-y-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 mx-auto">
         {testimonials.map((testimonial, index) => (
           <Card
             key={index}

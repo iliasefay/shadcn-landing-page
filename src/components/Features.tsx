@@ -56,7 +56,7 @@ export const Features = () => {
               <img
                 src={images[index]}
                 alt="About feature"
-                className="w-[200px] lg:w-[300px] mx-auto"
+                className="w-full max-w-[200px] sm:max-w-[250px] lg:max-w-[300px] mx-auto"
               />
             </CardFooter>
           </Card>

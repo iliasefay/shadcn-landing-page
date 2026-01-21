@@ -15,7 +15,7 @@ export const About = () => {
           <img
             src={pilot}
             alt=""
-            className="w-[300px] object-contain rounded-lg"
+            className="w-full sm:w-[250px] md:w-[300px] object-contain rounded-lg mx-auto md:mx-0"
           />
           <div className="bg-green-0 flex flex-col justify-between">
             <div className="pb-6">
@@ -25,7 +25,7 @@ export const About = () => {
                 </span>
                 {t('about.title2')}
               </h2>
-              <p className="text-xl text-muted-foreground mt-4">
+              <p className="text-base sm:text-lg md:text-xl text-muted-foreground mt-4">
                 {t('about.description')}
               </p>
             </div>
