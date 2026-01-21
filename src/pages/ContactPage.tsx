@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { toast } from "sonner";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -12,16 +13,27 @@ import {
   Send,
   Building2,
   MessageSquare,
+  Loader2,
 } from "lucide-react";
 
 export function ContactPage() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+
+    // Simulate API call
+    await new Promise(resolve => setTimeout(resolve, 1500));
+
+    setIsSubmitting(false);
     setFormSubmitted(true);
+    toast.success(t("contactPage.form.successTitle"), {
+      description: t("contactPage.form.successMessage"),
+    });
   };
 
   const contactInfo = [
@@ -155,9 +167,18 @@ export function ContactPage() {
                           placeholder={t("contactPage.form.messagePlaceholder")}
                         />
                       </div>
-                      <Button type="submit" size="lg" className="w-full">
-                        {t("contactPage.form.submit")}
-                        <Send className={`w-4 h-4 ${isRTL ? "mr-2" : "ml-2"}`} />
+                      <Button type="submit" size="lg" className="w-full" disabled={isSubmitting}>
+                        {isSubmitting ? (
+                          <>
+                            <Loader2 className={`w-4 h-4 animate-spin ${isRTL ? "ml-2" : "mr-2"}`} />
+                            {t("contactPage.form.submitting", "Sending...")}
+                          </>
+                        ) : (
+                          <>
+                            {t("contactPage.form.submit")}
+                            <Send className={`w-4 h-4 ${isRTL ? "mr-2" : "ml-2"}`} />
+                          </>
+                        )}
                       </Button>
                     </form>
                   </CardContent>
